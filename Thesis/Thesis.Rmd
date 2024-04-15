@@ -402,7 +402,7 @@ The main question of this study is: Does insulin bind to DMH neurons, and if so,
 
 ## Animals
 
-I used young (28-44 days old) male and female Sprague-Dawley rats from Charles River Laboratories (Québec, Canada). The rats arrived when they were 22 days old, and they had a one-week acclimation period. The rats lived in groups of 4 with free access to standard rat chow and water. All cages had wood shavings for bedding, toys (wooden blocks and a plastic chew toy) for enrichment and Crawl Balls™ (Bio-Serv) for shelter. The animal rooms were maintained at 21$^{\circ}$C and 50% $\pm$ 10%, with a 12-hour light/dark cycle. The Animal Care Committee at Mount Allison University approved the project (Protocol #103088).
+I used young (28-44 days old) male and female Sprague-Dawley rats from Charles River Laboratories (Québec, Canada). The rats arrived when they were 22 days old, and they had a one-week acclimation period. The rats lived in groups of 4 with free access to standard rat chow and water. All cages had wood shavings for bedding, toys (wooden blocks and a plastic chew toy) for enrichment and Crawl Balls™ (Bio-Serv) for shelter. The animal rooms were maintained at 21$^{\circ}$C and 50% $\pm$ 10% humidity, with a 12-hour light/dark cycle. The Animal Care Committee at Mount Allison University approved the project (Protocol #103088).
 
 ## Brain Removal & Slice Preparation
 
@@ -439,14 +439,14 @@ I used pCLAMP software (Version 10.6.0.13, Molecular Devices) to perform protoco
 
 I used a current clamp steps protocol to observe action potentials and compare their properties. I performed this protocol immediately with each new cell as a baseline, then recorded evoked excitatory currents for 25 minutes after adding insulin (see the *evoked currents* section for a protocol summary). After I finished the evoked currents protocol, I recorded the current clamp steps protocol once again. During the current clamp steps protocol, the software stimulated the cell for 500 ms with electrical current injections of increasing magnitude. The current injections began at -50 pA, and increased by 10 pA with each step until a maximum of 40 pA. The current injections depolarized the neuron to a point where it fired action potentials.
 
-I identified the first current injection that resulted in action potentials and then selected the first action potential for my analysis (Figure \ref{ap-schematic}). I identified the action potential threshold (the depolarization required to induce an action potential) through the first derivative method [@farriesetal2010]. This method sets the threshold as the membrane potential where the action potential velocity is 10 mV/ms or greater [@farriesetal2010]. The latency to fire was the time between the start of the stimulus and the action potential's peak amplitude.
+I identified the first current injection that resulted in action potentials and then selected the first action potential for my analysis (Figure \ref{ap-schematic}). I identified the action potential threshold (the depolarization required to induce an action potential; in mV) through the first derivative method [@farriesetal2010]. This method sets the threshold as the membrane potential where the action potential velocity is 10 mV/ms or greater [@farriesetal2010]. The latency to fire was the time (in ms) between the start of the stimulus and the action potential's peak amplitude.
 
-All other action potential properties were relative to the threshold. I measured the action potential's amplitude, threshold and half-width. I also measured the after-hyperpolarization amplitude and time of the after-hyperpolarization. Lastly, I counted the number of action potentials at each current injection and used these values to obtain the action potential frequency per current injection. If the recording contained no action potentials, I set the action potential frequency and amplitude to 0, and set all other action potentials to *NA* values. The threshold, amplitude, frequency, and all other action potential properties conveyed information about the intrinsic excitability of a neuron.
+All other action potential properties were relative to the threshold. I measured the action potential's amplitude (mV) and half-width (ms; Figure \ref{ap-schematic}). I also measured the after-hyperpolarization amplitude (mV) and time of the after-hyperpolarization (ms). Lastly, I counted the number of action potentials at each current injection and used these values to obtain the action potential frequency per current injection (Hz). If the recording contained no action potentials, I set the action potential frequency and amplitude to 0, and set all other action potentials to *NA* values. The threshold, amplitude, frequency, and all other action potential properties conveyed information about the intrinsic excitability of a neuron. For example, the half-width (a measure of the width of the action potential measured at half the amplitude) is an indicator of the repolarization rate [@bean2007].
 
 By comparing action potential properties before and after insulin exposure, I was able to explore the effect of insulin on intrinsic neuronal excitability. Since the action potential properties data did not pass the assumptions of normality, even with a log-transformation, I used a paired Wilcoxon signed-rank test to assess differences in action potential parameters across the two states.
 
 ```{r Include-figure-ap-schematic}
-#| fig.cap = "A schematic of the current clamp steps protocol. \\emph{Top:} This is a representative recording from a single cell featuring all 10 current clamp steps stacked on top of one other. The current injections ranged from -50 pA (bottom; orange) to 40 pA (top; purple), with a 10 pA increase per step. I used the first action potential at the lowest current injection (boxed outline) to analyze action potential properties. All traces have been smoothed through node reduction using the \\emph{simplify path} function in Inkscape. \\emph{Bottom:} I measured the action potential threshold, amplitude, half-width, and latency to fire. I also measured the after-hyperpolarization amplitude and time of the after-hyperpolarization. \\label{ap-schematic}",
+#| fig.cap = "A schematic of the current clamp steps protocol. \\emph{Top:} This is a representative recording from a single cell featuring all 10 current clamp steps stacked on top of one other. The current injections ranged from -50 pA (bottom; orange) to 40 pA (top; purple), with a 10 pA increase per step. I used the first action potential at the lowest current injection (boxed outline at a current injection of 20 pA) to analyze action potential properties. All traces have been smoothed through node reduction using the \\emph{simplify path} function in Inkscape. \\emph{Bottom:} I measured the action potential threshold, amplitude, half-width, and latency to fire. I also measured the after-hyperpolarization amplitude and time of the after-hyperpolarization. \\label{ap-schematic}",
 #| fig.scap = "The current clamp steps protocol with labelled action potential properties",
 #| out.width = "100%",
 #| purl = FALSE
@@ -458,7 +458,7 @@ knitr::include_graphics(here("Figures/AP-Schematic.png"))
 
 During the evoked currents protocol, the software maintained the cell at a membrane potential of -70 mV, which is close to a DMH neuron's natural resting membrane potential of -60 mV [@baileyetal2003]. Through the stimulating pipette, the software delivered two electrical stimuli 50 ms apart, repeated every 5 seconds (Figure \ref{evoked-currents-schematic}). The stimuli induced nearby neurons to release glutamate onto the target cell, which then experienced a temporary change in membrane potential. These currents are called evoked excitatory post-synaptic currents (eEPSCs, or "evoked currents") because they are a) artificially induced, b) caused by an excitatory neurotransmitter, and c) present in the cell that receives the neurotransmitters, not the presynaptic cell.
 
-I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline. I then added 500 nM insulin to the perfusion solution and continued recording for 25 minutes. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-naphthalenylmethylphosphonic acid; HNMPA, Abcam Incorporated; 300 $\mu$M) and picropodophyllotoxin (PPP, 0.5 $\mu$M, Selleck Chemicals) to explore insulin's binding mechanisms.
+I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline. I then added 500 nM insulin to the perfusion solution and continued recording for 25 minutes. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-naphthalenylmethylphosphonic acid; HNMPA, Abcam Incorporated; 300 $\mu$M) and an insulin-like growth factor 1 receptor blocker (picropodophyllotoxin; PPP, 0.5 $\mu$M; Selleck Chemicals) to explore insulin's binding mechanisms.
 
 To determine if insulin signalling in the DMH varies with feeding state, I placed a rat alone into a cage with no food for 24 hours before brain removal. During this period, the rat had free access to water, toys for environmental enrichment, bedding, and shelter. Removing food creates a hunger state, which would potentially alter insulin signalling at the DMH.
 
@@ -483,7 +483,7 @@ Using the raw data (i.e. the non-normalized data), I divided the amplitude of th
 
 I measured electrophysiological parameters like evoked current amplitude and action potential properties using *Clampfit* (Version 10.6.0.13, Molecular Devices). I performed all statistical analyses with *R Statistical Software* (`r paste0("Version ",substr(version$version.string,11,15))`; R Core Team 2021) in *RStudio* (Build 369; @rstudioteam2020). I used $\alpha$ = 0.05 for all tests.
 
-I used the *abfTools* package [@wu2019] to obtain representative traces from raw recording files, and I made all plots with *ggplot2* [@wickham2016a]. I used *Inkscape* (Version 1.3; @inkscapedevelopers2023), an open-source vector editor, to create the explanatory schematics.
+I used the *abfTools* package (Version `r packageVersion("abftools")`; @wu2019) to obtain representative traces from raw recording files, and I made all plots with *ggplot2* (Version `r packageVersion("ggplot2")`; @wickham2016a). I used *Inkscape* (Version 1.3; @inkscapedevelopers2023), an open-source vector editor, to create the explanatory schematics.
 
 ```{r Include-figure-methods}
 #| fig.cap = "A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. \\label{methods-figure}",
@@ -1015,9 +1015,6 @@ half_width_plot <- make_AP_plot(data = distinct_aps,
                                 y_axis_title = "Half Width (ms)")
 
 
-# Don't forget!! Set geom_sina_size to 3 in set-up chunk above when making presentation plots
-
-
 # Save Plots
 if (save_choice == "yes") {
   save_AP_plot(full_ap_frequency_plot, "AP-frequency")
@@ -1356,7 +1353,7 @@ kable_manovar_table_eEPSC <- tidy_manovar %>%
         linesep = '',
         col.names = c("Parameters","df","Pillai's Trace","F","\\textit{p}-value"),
         escape = F,
-        caption = "A multivariated repeated measures ANOVA using Pillai's Trace shows that current amplitude varies significantly with time, and there are no significant interactions between factors like sex and treatment. \\label{MANOVAR-Table}",
+        caption = "A multivariate repeated measures ANOVA using Pillai's Trace shows that current amplitude varies significantly with time, and there are no significant interactions between factors like sex and treatment. \\label{MANOVAR-Table}",
         caption.short = "MANOVAR summary table of evoked excitatory currents before and during insulin exposure",
         align = c('l','r','r','r','r')) %>%
   kable_styling(full_width = T) %>%
@@ -1575,7 +1572,7 @@ kable_t_test_table_PPR <- t_test_PPR %>%
     booktabs = T,
     linesep = '',
     col.names = c("Parameter", "Statistic", "DF", "\\textit{p}-value"),
-    caption = "A paired t-test comparing the mean paired pulse ratio (PPR) per cell during the baseline period (0-5 min) to the mean PPR after insulin exposure (20-25 min) shows that insulin does not significantly affect the PPR during experiments with no additional treatments, HNMPA, or fasting. Insulin significantly increases the PPR when the insulin-like growth factor 1 receptor PPP is applied. \\label{PPR-paired-t-test}",
+    caption = "A paired t-test comparing the mean paired pulse ratio (PPR) per cell during the baseline period (0-5 min) to the mean PPR after insulin exposure (20-25 min) shows that insulin does not significantly affect the PPR during experiments with no additional treatments, HNMPA, or fasting. Insulin significantly increases the PPR when the insulin receptor blocker HNMPA is applied. \\label{PPR-paired-t-test}",
     caption.short = "Paired T-test summary table examining paired pulse ratios before and after insulin exposure",
     escape = F
   ) %>%
@@ -1659,7 +1656,7 @@ max_percent_change <- cell_coordinates %>%
 
 # Results
 
-The primary goal of this study was to examine the effect of insulin on neuronal excitability and communication in DMH neurons. I used whole-cell patch clamp electrophysiology to record action potentials and evoked excitatory currents from `r nrow(summary_df_wide_addinsulin)` unique neurons in the DMH. I analyzed recordings taken before and while DMH neurons were exposed to 500 nM insulin. By comparing parameters like action potential frequency and evoked current amplitude across conditions, I was able to draw conclusions about the effect of insulin on intrinsic neuronal excitability, excitatory synaptic transmission, and neurotransmitter release onto DMH neurons.
+The primary goal of this study was to examine the effect of insulin on neuronal excitability and communication in DMH neurons. I used whole-cell patch clamp electrophysiology to record action potentials and evoked excitatory currents from `r nrow(summary_df_wide_addinsulin)` unique neurons in the DMH. I analyzed recordings taken before, while and after DMH neurons were exposed to 500 nM insulin. By comparing parameters like action potential frequency and evoked current amplitude across conditions, I was able to draw conclusions about the effect of insulin on intrinsic neuronal excitability, excitatory synaptic transmission, and neurotransmitter release onto DMH neurons.
 
 The second goal of the study was to determine the mechanism of insulin signalling within DMH neurons. I used insulin receptor antagonists like HNMPA and PPP to determine the receptors that insulin binds to, and to explore intracellular signalling pathways that might be activated by insulin binding. I also examined changes in the paired pulse ratio to determine if insulin signalling uses pre- or post-synaptic mechanisms. Lastly, I exposed rats to a 24-hour fasting protocol before tissue extraction to assess if hunger affects insulin signalling within the DMH relative to control experiments from satiated animals.
 
@@ -1680,9 +1677,9 @@ A current clamp steps protocol taken before and after insulin exposure showed th
   pull(p_string)`).
 
 ```{r AP-data-multiplot-figure, fig.width = 10, fig.height = 12, warning=F}
-#| fig.cap = "Insulin decreases the excitability of DMH neurons. Data were measured under baseline conditions (\``baseline\") or 25 minutes after insulin exposure (\``Insulin\"). \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE). \\emph{B)} Representative action potential traces from a current injection of 40 pA (top: baseline, bottom: after insulin exposure). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing action potential half-widths \\emph{E)}. Insulin does not significantly affect action potential latency \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
+#| fig.cap = "Insulin decreases the excitability of DMH neurons. Action potentials were recorded under baseline conditions (\``baseline\") and then 25 minutes after insulin exposure (\``Insulin\"). \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE). \\emph{B)} Representative action potential traces from a current injection of 40 pA (top: baseline, bottom: after insulin exposure). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing action potential half-widths \\emph{E)}. Insulin does not significantly affect action potential latency \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
 #| fig.scap = "Insulin changes action potential characteristics in DMH neurons",
-#| out.width = "95%"
+#| out.width = "90%"
 
 # ----------------------- AP Analysis: Full Multiplot Figure -----------------------------------
 full_ap_multiplot <-
@@ -1988,7 +1985,7 @@ kable_t_test_table_PPR
 ```
 
 ```{r treatment-comparisons-plot}
-#| fig.cap = "Insulin decreased eEPSC amplitudes in all treatments, with no significant differences between treatments. In this summary figure, each dot represents the mean eEPSC amplitude of a cell relative to the baseline (%) during the last 20-25 minutes of the evoked currents protocol. \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). \\label{eEPSC-treatment-comparisons-plot}",
+#| fig.cap = "Insulin decreased eEPSC amplitudes in all treatments, with no significant differences between treatments. In this summary figure, each dot represents the mean eEPSC amplitude of a cell relative to the baseline (%) during the last 20-25 minutes of the evoked currents protocol. Black solid shapes indicate the mean ± SE for each sex. \\label{eEPSC-treatment-comparisons-plot}",
 #| fig.scap = "Insulin decreased eEPSC amplitudes in all treatments",
 #| out.width = "100%"
 
