@@ -387,7 +387,7 @@ Animals require an intact DMH for appetite regulation. When researchers destroye
 #| out.width = "100%",
 #| purl = FALSE
 
-knitr::include_graphics(here("Figures/20230914-Projections.png"))
+knitr::include_graphics(here("Figures/DMH-Projections.png"))
 ```
 
 Although insulin interacts with neurons in the hypothalamus [@corpetal1986] and DMH neurons express insulin receptors [@corpetal1986], nothing is known about the effect of insulin on DMH neurons. It is also unclear how insulin binds to DMH neurons, and how it could affect neuronal activity.

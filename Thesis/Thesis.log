@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  15 APR 2024 00:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  15 APR 2024 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,8 +1029,8 @@ File: ../Figures/Insulin-schematic.png Graphic file (type bmp)
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 (Font)              scaled to size 8.4pt on input line 347.
 [2] [3] [4]
-File: ../Figures/20230914-Projections.png Graphic file (type bmp)
-<../Figures/20230914-Projections.png>
+File: ../Figures/DMH-Projections.png Graphic file (type bmp)
+<../Figures/DMH-Projections.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1054,8 +1054,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3646) has occurred while \output is active []
 
 [10]
-File: ../Figures/AP-schematic.png Graphic file (type bmp)
-<../Figures/AP-schematic.png>
+File: ../Figures/AP-Schematic.png Graphic file (type bmp)
+<../Figures/AP-Schematic.png>
 
 LaTeX Warning: Float too large for page by 4.02016pt on input line 627.
 
@@ -1155,7 +1155,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  21133 strings out of 476717
- 395796 string characters out of 5799454
+ 395701 string characters out of 5799454
  1938148 words of memory out of 5000000
  42832 multiletter control sequences out of 15000+600000
  565702 words of font info for 97 fonts, out of 8000000 for 9000
