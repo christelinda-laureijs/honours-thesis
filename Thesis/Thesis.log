@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  15 APR 2024 21:28
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  16 APR 2024 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1120,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [40]
-Underfull \hbox (badness 3701) in paragraph at lines 1546--1549
+Underfull \hbox (badness 3701) in paragraph at lines 1548--1551
 []\TU/EBGaramond(0)/b/n/12 Pedersen, T. L. (2024). \TU/EBGaramond(0)/m/it/12 Patchwork: The composer of plots\TU/EBGaramond(0)/b/n/12 . R package version 1.2.0.9000.
  []
 
@@ -1128,7 +1128,7 @@ Underfull \hbox (badness 3701) in paragraph at lines 1546--1549
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Overfull \hbox (64.58229pt too wide) in paragraph at lines 1603--1607
+Overfull \hbox (64.58229pt too wide) in paragraph at lines 1605--1609
 []\TU/EBGaramond(0)/b/n/12 Statistics Canada. (2019). Overweight and obese adults. In \TU/EBGaramond(0)/m/it/12 Statistics Canada\TU/EBGaramond(0)/b/n/12 . https://www150.statcan.gc.ca/n1/pub/82-
  []
 
