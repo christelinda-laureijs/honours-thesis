@@ -3,6 +3,8 @@ title: "P1-Analysis-Script"
 author: "Christelinda Laureijs"
 date: "2024-02-19"
 output:
+  github_document:
+    html_preview: false
   html_document:
     css: ../Templates/my-CSS-theme.css
 ---

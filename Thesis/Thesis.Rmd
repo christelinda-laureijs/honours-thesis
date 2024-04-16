@@ -302,7 +302,7 @@ April 10, 2024
 
 \normalsize
 
-This thesis was typeset in R Markdown and the text was set in EB Garamond. The data and code used to produce this document are available at [TBD].
+This thesis was typeset in R Markdown and the text was set in EB Garamond. The data and code used to produce this document are available at [https://github.com/christelinda-laureijs/honours-thesis](https://github.com/christelinda-laureijs/honours-thesis).
 
 
 \newpage
