@@ -14,8 +14,6 @@ April 16, 2024
 
 <img src="Quick-Plot-Viewer_files/figure-gfm/pruned-summary-plot-none-1.png" width="100%" />
 
-![](Quick-Plot-Viewer_files/figure-gfm/get-one-sex-fasting-plots-1.png)<!-- -->![](Quick-Plot-Viewer_files/figure-gfm/get-one-sex-fasting-plots-2.png)<!-- -->
-
 ### Males
 
 #### Raw
