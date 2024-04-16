@@ -3,8 +3,6 @@ title: "Quick Plot Viewer"
 author: "Christelinda Laureijs"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
-  github_document:
-    html_preview: false
   html_document:
     css: "../Templates/my-CSS-theme.css"
     toc: true
@@ -12,6 +10,8 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: false
+  github_document:
+    html_preview: false
 ---
 
 ```{r setup, include=FALSE}
