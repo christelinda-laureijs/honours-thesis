@@ -3,6 +3,8 @@ title: "Quick Plot Viewer"
 author: "Christelinda Laureijs"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
+  github_document:
+    html_preview: false
   html_document:
     css: "../Templates/my-CSS-theme.css"
     toc: true
@@ -10,19 +12,6 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: false
-  pdf_document:
-    toc: false
-    latex_engine: xelatex
-    fig_caption: true
-    includes:
-      in_header: ../Templates/MtA-Thesis-Preamble.tex
-fontsize: 12pt
-geometry:
-- margin = 1in
-- bindingoffset = 0mm
-linestretch: 1.5
-classoption: twoside
-indent: true
 ---
 
 ```{r setup, include=FALSE}
@@ -75,7 +64,7 @@ source(here("Scripts", "Functions.R"), local = knitr::knit_global())
 # Saved plots will automatically go to Figures/Output-... folders depending on what type they are
 # E.g. Raw plots of the first evoked current over time (P1 vs. Time) will go into Figures/Output-individual-plots
 
-save_choice <- "yes"
+save_choice <- "no"
 
 # Set colours here only for consistency
 
@@ -327,7 +316,7 @@ if (save_choice == "yes") {
 # Add representative traces
 AV_representative_trace <-
   png::readPNG(here(
-    "Figures/Representative-Traces/Representative-Trace-Cell-AV.png"
+    "Figures/Representative-Traces/Female-Control-Trace-AV.png"
   ))
 
 AV_representative_trace <- rasterGrob(AV_representative_trace)
