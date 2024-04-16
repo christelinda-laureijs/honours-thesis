@@ -23,7 +23,7 @@ editor_options:
   chunk_output_type: inline
 always_allow_html: true
 nocite: |
-  @R-car, @R-broom, @R-dplyr, @R-extrafont, @R-ggforce, @R-ggfortify, @R-ggh4x, @R-ggpubr, @R-ggsignif, @R-ggtext, @R-glue, @R-heplots, @R-here, @R-kableExtra, @R-knitr, @R-MASS, @R-nlme, @R-patchwork, @R-rcompanion, @R-rstatix, @R-stringr, @R-tidyr, @R-viridis, @R-viridisLite, @car2019
+  @R-car, @R-broom, @R-dplyr, @R-extrafont, @R-ggforce, @R-ggfortify, @R-ggh4x, @R-ggpubr, @R-ggsignif, @R-ggtext, @R-glue, @R-heplots, @R-here, @R-kableExtra, @R-knitr, @R-MASS, @R-nlme, @R-patchwork, @R-rcompanion, @R-rstatix, @R-stringr, @R-tidyr, @R-viridis, @R-viridisLite
 ---
 
 ```{r set-global-options, echo=FALSE}

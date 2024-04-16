@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  16 APR 2024 12:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  16 APR 2024 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1120,7 +1120,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [40]
-Underfull \hbox (badness 3701) in paragraph at lines 1548--1551
+Underfull \hbox (badness 3701) in paragraph at lines 1543--1546
 []\TU/EBGaramond(0)/b/n/12 Pedersen, T. L. (2024). \TU/EBGaramond(0)/m/it/12 Patchwork: The composer of plots\TU/EBGaramond(0)/b/n/12 . R package version 1.2.0.9000.
  []
 
@@ -1128,7 +1128,7 @@ Underfull \hbox (badness 3701) in paragraph at lines 1548--1551
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Overfull \hbox (64.58229pt too wide) in paragraph at lines 1605--1609
+Overfull \hbox (64.58229pt too wide) in paragraph at lines 1600--1604
 []\TU/EBGaramond(0)/b/n/12 Statistics Canada. (2019). Overweight and obese adults. In \TU/EBGaramond(0)/m/it/12 Statistics Canada\TU/EBGaramond(0)/b/n/12 . https://www150.statcan.gc.ca/n1/pub/82-
  []
 
@@ -1147,7 +1147,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21133 strings out of 476717
  395701 string characters out of 5799454
- 1938148 words of memory out of 5000000
+ 1939148 words of memory out of 5000000
  42832 multiletter control sequences out of 15000+600000
  565702 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
