@@ -3,6 +3,7 @@ title: "README"
 author: "Christelinda Laureijs"
 date: "Last updated: `r format(Sys.time(), '%B %d, %Y')`"
 output:
+  github_document: default
   html_document:
     toc: false
     css: Templates/my-CSS-theme.css
