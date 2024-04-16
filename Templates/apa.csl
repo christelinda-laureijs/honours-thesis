@@ -1337,6 +1337,8 @@
       </group>
     </group>
   </macro>
+
+
   <macro name="access">
     <choose>
       <if variable="DOI" match="any">
@@ -1440,6 +1442,7 @@
           </names>
           <text macro="date-legal"/>
           <text macro="container-legal"/>
+          <text variable="note"  prefix=". "  suffix=". "/>
           <text macro="access"/>
         </group>
       </if>
@@ -1474,6 +1477,7 @@
             </group>
             <text variable="references"/>
           </group>
+          <text variable="note"  prefix=". "  suffix=". "/>
           <text macro="access"/>
         </group>
       </else>
@@ -1687,6 +1691,7 @@
               <text macro="event"/>
               <text macro="publisher"/>
             </group>
+            <text variable="note"  prefix=". " suffix=". "/>
             <text macro="access"/>
             <text macro="publication-history"/>
           </group>
