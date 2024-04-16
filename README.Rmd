@@ -73,7 +73,11 @@ To generate the thesis as a PDF file, go to the **Thesis/** folder, open the `Th
 -   *Scripts-from-Thesis-Rmd.R* contains just the R code contained within code chunks of the `Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script.
 
 ```{r eval=F, message=F, warning=F}
-knitr::purl(input = here::here("Thesis/Thesis.Rmd"), output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
+knitr::purl(
+  input = here::here("Thesis/Thesis.Rmd"),
+  output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"),
+  documentation = 0
+)
 ```
 
 

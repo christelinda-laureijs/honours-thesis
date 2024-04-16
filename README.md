@@ -112,7 +112,11 @@ starting with **Output-**. Also contains the folders
   changes within the main `Thesis.Rmd`file, not the script.
 
 ``` r
-knitr::purl(input = here::here("Thesis/Thesis.Rmd"), output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
+knitr::purl(
+  input = here::here("Thesis/Thesis.Rmd"),
+  output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"),
+  documentation = 0
+)
 ```
 
 **Templates/** - Contains my custom style templates: -
