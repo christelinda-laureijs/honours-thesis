@@ -201,7 +201,7 @@ which was repeated again after a 20-second interval.
 
 **P1 and P2**: Although the raw values were in pA, I normalized these
 values relative to the baseline current for each cell. The resulting
-percent data has \*\_transformed\* in the variable name.
+percent data has \*\*\_transformed\*\* in the variable name.
 
 **Interval**: I named each interval ‘t_to\_’ to avoid using numbers and
 special characters in variable names.

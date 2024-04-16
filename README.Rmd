@@ -133,6 +133,6 @@ Additional notes about some variables:
 -   *AM251* blocks CB1 cannabinoid receptors.
 -   *Fasting* marks experiments in which I removed food from the rats 24 hours before euthanization.
 
-**P1 and P2**: Although the raw values were in pA, I normalized these values relative to the baseline current for each cell. The resulting percent data has *_transformed* in the variable name.
+**P1 and P2**: Although the raw values were in pA, I normalized these values relative to the baseline current for each cell. The resulting percent data has **_transformed** in the variable name.
 
 **Interval**: I named each interval 't_to\_' to avoid using numbers and special characters in variable names.
