@@ -1,6 +1,13 @@
 About the Project
 ================
 
+- [Background](#background)
+- [Goals](#goals)
+- [Instructions](#instructions)
+- [Important variables](#important-variables)
+- [Where to find things](#where-to-find-things)
+- [Metadata](#metadata)
+
 <img src="Figures/Presentation-Images/Cover-Image.png" alt="Cover image displaying the text 'Insulin in the Brain' with background graphics of a rat, a neuron and a cartoon representation of insulin" width="1280" style="display: block; margin: auto;" />
 
 ## Background
