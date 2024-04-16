@@ -724,9 +724,6 @@ half_width_plot <- make_AP_plot(data = distinct_aps,
                                 y_axis_title = "Half Width (ms)")
 
 
-# Don't forget!! Set geom_sina_size to 3 in set-up chunk above when making presentation plots
-
-
 # Save Plots
 if (save_choice == "yes") {
   save_AP_plot(full_ap_frequency_plot, "AP-frequency")
@@ -991,7 +988,7 @@ kable_manovar_table_eEPSC <- tidy_manovar %>%
         linesep = '',
         col.names = c("Parameters","df","Pillai's Trace","F","\\textit{p}-value"),
         escape = F,
-        caption = "A multivariated repeated measures ANOVA using Pillai's Trace shows that current amplitude varies significantly with time, and there are no significant interactions between factors like sex and treatment. \\label{MANOVAR-Table}",
+        caption = "A multivariate repeated measures ANOVA using Pillai's Trace shows that current amplitude varies significantly with time, and there are no significant interactions between factors like sex and treatment. \\label{MANOVAR-Table}",
         caption.short = "MANOVAR summary table of evoked excitatory currents before and during insulin exposure",
         align = c('l','r','r','r','r')) %>%
   kable_styling(full_width = T) %>%
@@ -1056,7 +1053,7 @@ kable_t_test_table_PPR <- t_test_PPR %>%
     booktabs = T,
     linesep = '',
     col.names = c("Parameter", "Statistic", "DF", "\\textit{p}-value"),
-    caption = "A paired t-test comparing the mean paired pulse ratio (PPR) per cell during the baseline period (0-5 min) to the mean PPR after insulin exposure (20-25 min) shows that insulin does not significantly affect the PPR during experiments with no additional treatments, HNMPA, or fasting. Insulin significantly increases the PPR when the insulin-like growth factor 1 receptor PPP is applied. \\label{PPR-paired-t-test}",
+    caption = "A paired t-test comparing the mean paired pulse ratio (PPR) per cell during the baseline period (0-5 min) to the mean PPR after insulin exposure (20-25 min) shows that insulin does not significantly affect the PPR during experiments with no additional treatments, HNMPA, or fasting. Insulin significantly increases the PPR when the insulin receptor blocker HNMPA is applied. \\label{PPR-paired-t-test}",
     caption.short = "Paired T-test summary table examining paired pulse ratios before and after insulin exposure",
     escape = F
   ) %>%
@@ -1256,8 +1253,6 @@ ppr_summary_plot <- PPR_df %>%
   ) +
   scale_shape_manual(values = c(17, 16)) +
   guides(color = "none", shape = guide_legend(reverse = T))
-# for Dr. Crosby
-  #theme(axis.title.y = element_text(face = "plain"))
 
 if (save_choice == "yes") {
   ggsave(
@@ -1309,10 +1304,6 @@ treatment_comparisons_plot <- cell_coordinates %>%
   theme(legend.position = "right",
         axis.title.y = element_text(angle = 90, hjust = 0.5)) +
   guides(color = "none", shape = guide_legend(reverse = T))
-  # For Dr. Crosby
-  # labs(y = "Change in\neEPSC amplitude (%)") +
-  # theme(axis.title.y = element_text(angle = 90),
-  #       axis.title = element_text(face = "plain"))
 
 treatment_comparisons_plot
 
@@ -1395,7 +1386,7 @@ knitr::knit_exit()
 # This code is commented out because it causes issues with knitting
 # R thought that there were duplicate chunks
 
-# knitr::purl(input = here("Thesis/Thesis.Rmd"), output = here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
+# knitr::purl(input = here::here("Thesis/Thesis.Rmd"), output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
 
 
 

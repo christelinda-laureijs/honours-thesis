@@ -1,4 +1,4 @@
-Variable Name,Type,Description
+Variable,Type,Description
 Letter,character,Letter ID of the recording for easy cross-referencing to my lab book
 Synapses,character,Synapses being observed
 Sex,character,Biological sex of the animal

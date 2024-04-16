@@ -2206,7 +2206,7 @@ knitr::knit_exit()
 # This code is commented out because it causes issues with knitting
 # R thought that there were duplicate chunks
 
-# knitr::purl(input = here("Thesis/Thesis.Rmd"), output = here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
+# knitr::purl(input = here::here("Thesis/Thesis.Rmd"), output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
 ```
 
 # Get Presentation Plots

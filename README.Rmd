@@ -70,7 +70,12 @@ To generate the thesis as a PDF file, go to the **Thesis/** folder, open the `Th
 
 -   *Functions.r* contains custom functions that I wrote to create the summary plots. I put this as an external .R file instead of keeping it within `Thesis.Rmd` so that I could use it elsewhere.
 
--   *Scripts-from-Thesis-Rmd.R* contains just the R code contained within code chunks of the `Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script. You can regenerate this file this by running the code in the last chunk of the `Thesis.Rmd` file (the one beginning with `knitr::purl()`).
+-   *Scripts-from-Thesis-Rmd.R* contains just the R code contained within code chunks of the `Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script.
+
+```{r}
+knitr::purl(input = here::here("Thesis/Thesis.Rmd"), output = here::here("Scripts/Scripts-from-Thesis-Rmd.R"), documentation = 0)
+```
+
 
 
 **Templates/** - Contains my custom style templates:
