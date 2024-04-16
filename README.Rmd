@@ -17,6 +17,9 @@ output:
 knitr::include_graphics(here::here("Figures/Presentation-Images/Cover-Image.png"))
 ```
 
+{:toc}
+
+
 ## Background
 
 Insulin is a hormone associated with processes like blood glucose regulation, and it also acts in the brain. For my honours project, I explored the effect of insulin on neurons in a brain region called the dorsomedial hypothalamus (DMH). DMH neurons stimulate appetite and they also have insulin receptors, but almost nothing is known about the effect of insulin on neuronal activity in the DMH.
