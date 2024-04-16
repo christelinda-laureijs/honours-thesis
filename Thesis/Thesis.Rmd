@@ -1724,7 +1724,7 @@ Insulin significantly decreases action potential amplitude relative to baseline 
   filter(AP_parameter_name == "Peak amplitude") %>%
   pull(statistic)`, \emph{p} = `r wilcoxon_table_ap %>%
   filter(AP_parameter_name == "Peak amplitude") %>%
-  pull(p_string)`; Figure \ref{ap-multiplot-figure}C). Insulin also significantly decreases the threshold required to initiate an action potential ($W$(`r wilcoxon_table_ap %>%
+  pull(p_string)`; Figure \ref{ap-multiplot-figure}C). In four recordings, there were no amplitudes after insulin exposure, so additional action potential parameters could not be measured. Of the action potentials that did fire after insulin exposure, the threshold decreased significantly ($W$(`r wilcoxon_table_ap %>%
   filter(AP_parameter_name == "Threshold") %>%
   pull(df)`) = `r wilcoxon_table_ap %>%
   filter(AP_parameter_name == "Threshold") %>%
@@ -1962,8 +1962,6 @@ ppr_summary_plot <- PPR_df %>%
   ) +
   scale_shape_manual(values = c(17, 16)) +
   guides(color = "none", shape = guide_legend(reverse = T))
-# for Dr. Crosby
-  #theme(axis.title.y = element_text(face = "plain"))
 
 if (save_choice == "yes") {
   ggsave(
@@ -2023,10 +2021,6 @@ treatment_comparisons_plot <- cell_coordinates %>%
   theme(legend.position = "right",
         axis.title.y = element_text(angle = 90, hjust = 0.5)) +
   guides(color = "none", shape = guide_legend(reverse = T))
-  # For Dr. Crosby
-  # labs(y = "Change in\neEPSC amplitude (%)") +
-  # theme(axis.title.y = element_text(angle = 90),
-  #       axis.title = element_text(face = "plain"))
 
 treatment_comparisons_plot
 
@@ -2233,12 +2227,6 @@ presentation_plot_no_treatment <-
                          color_choice = 1) +
   labs(title = "Insulin decreases eEPSC amplitudes in <b style='color:#4d0299'>males</b> & <b style='color:#b071f0;'>females</b> by 50%")
 
-
-# For Dr. Crosby's Presentation
-# presentation_plot_no_treatment <- presentation_plot_no_treatment +
-#   theme(axis.title = element_text(face = "plain"),
-#         axis.title.y = element_text(angle = 90))
-
 presentation_plot_no_treatment
 
 if (save_choice == "yes") {
@@ -2332,11 +2320,6 @@ presentation_plot_HNMPA <- make_presentation_plots(category = 2,
                                                   data = pruned_df,
                                                   color_choice = 5) +
   labs(title = "Insulin decreases eEPSC amplitudes even with HNMPA")
-# For Dr. Crosby's Presentation
-# theme(
-#   axis.title = element_text(face = "plain"),
-#   axis.title.y = element_text(angle = 90)
-# )
 
 presentation_plot_HNMPA
 
