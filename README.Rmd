@@ -33,22 +33,25 @@ I developed this code to achieve the following goals:
 
 ## Instructions
 
-Clone the repository using git clone:
+You could clone the repository using git clone:
 
 ```
 git clone https://github.com/christelinda-laureijs/honours-thesis.git
 ```
-Then, click on the `R-Work.Rproj` file. This will open RStudio and set the working directory to this folder `(...your computer path here.../R-Work/)`.
+
+Or, if you don't have GitHub set up, you could also download the repository as a zip file.
+
+Either way, be sure to click on the `honours-thesis.Rproj` file. This will open RStudio and set the working directory to the project folder on your computer.
 
 > IMPORTANT: If you don’t open RStudio through the .Rproj file, R will not know where to find any of the scripts, and you will see error messages about missing files.
 
 Read through the comments in the file (`Thesis.Rmd` or `Scripts-from-Thesis-Rmd.R`) and run each section in groups (press Ctrl+Enter to run chunks at a time). To minimize error messages, go from the top to the bottom and don’t skip lines.
 
-The file `Scripts-from-Thesis-Rmd.R` in the **Scripts/** folder contains just the R code contained within the `Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script.
+The file `Scripts/Scripts-from-Thesis-Rmd.R` contains just the R code contained within the `Thesis/Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script.
 
 When adding new recordings, use the `P1-Analysis-Script.Rmd` in the `Scripts` folder. Be sure to read the instructions contained within the comments there.
 
-If you want to quickly view the plots, make sure that you have run the `Thesis.Rmd` file at least up to the "Begin statistical analysis" code. This will ensure that the data are processed and ready for plotting. Then, you can open and run the `Quick-Plot-Viewer.Rmd` file in the Figures subfolder.
+If you just want to quickly view the plots, make sure that you have run the `Thesis.Rmd` file at least up to the "Begin statistical analysis" code. This will ensure that the data are processed and ready for plotting. Then, you can open and run the `Figures/Quick-Plot-Viewer.Rmd` file.
 
 ## Important variables
 
