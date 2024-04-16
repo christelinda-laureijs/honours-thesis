@@ -33,7 +33,12 @@ I developed this code to achieve the following goals:
 
 ## Instructions
 
-First, click on the `R-Work.Rproj` file. This will open RStudio and set the working directory to this folder `(...your computer path here.../R-Work/)`.
+Clone the repository using git clone:
+
+```
+git clone https://github.com/christelinda-laureijs/honours-thesis.git
+```
+Then, click on the `R-Work.Rproj` file. This will open RStudio and set the working directory to this folder `(...your computer path here.../R-Work/)`.
 
 > IMPORTANT: If you don’t open RStudio through the .Rproj file, R will not know where to find any of the scripts, and you will see error messages about missing files.
 

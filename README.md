@@ -33,7 +33,11 @@ I developed this code to achieve the following goals:
 
 ## Instructions
 
-First, click on the `R-Work.Rproj` file. This will open RStudio and set
+Clone the repository using git clone:
+
+    git clone https://github.com/christelinda-laureijs/honours-thesis.git
+
+Then, click on the `R-Work.Rproj` file. This will open RStudio and set
 the working directory to this folder
 `(...your computer path here.../R-Work/)`.
 
