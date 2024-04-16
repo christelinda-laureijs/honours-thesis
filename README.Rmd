@@ -17,8 +17,6 @@ output:
 knitr::include_graphics(here::here("Figures/Presentation-Images/Cover-Image.png"))
 ```
 
-{:toc}
-
 
 ## Background
 

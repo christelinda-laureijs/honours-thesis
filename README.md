@@ -10,8 +10,6 @@ About the Project
 
 <img src="Figures/Presentation-Images/Cover-Image.png" alt="Cover image displaying the text 'Insulin in the Brain' with background graphics of a rat, a neuron and a cartoon representation of insulin" width="1280" style="display: block; margin: auto;" />
 
-{:toc}
-
 ## Background
 
 Insulin is a hormone associated with processes like blood glucose
