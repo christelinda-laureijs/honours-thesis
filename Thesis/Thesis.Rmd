@@ -930,12 +930,26 @@ kable_tidy_wilcoxon <- wilcoxon_table_ap %>%
 
 ```{r AP-data-make-summary-ap-frequency-plot, message=F, warning=F}
 # ----------------- AP Analysis: Make AP Frequency Plot ---------------------------
-full_ap_frequency_plot <- full_ap_df %>%
+
+full_ap_plot_df <- full_ap_df %>%
   group_by(State, Current_injection) %>%
   summarize(
     mean_AP_frequency = mean(AP_frequency),
-    SE = sd(AP_frequency) / sqrt(n())
-  ) %>%
+    SE = sd(AP_frequency) / sqrt(n()),
+    n = n()
+  )
+
+ap_plot_baseline_count <- full_ap_plot_df %>% 
+  filter(State == "Baseline") %>% 
+  pull(n) %>% 
+  first()
+
+ap_plot_insulin_count <- full_ap_plot_df %>% 
+  filter(State == "Insulin") %>% 
+  pull(n) %>% 
+  first()
+
+full_ap_frequency_plot <- full_ap_plot_df %>%
   ggplot(
     aes(
       x = Current_injection,
@@ -949,13 +963,28 @@ full_ap_frequency_plot <- full_ap_df %>%
   geom_pointrange(size = 1.1,
                   linewidth = 0.6,
                   position = position_dodge(width = 0)) +
-  labs(x = "Current Injection (pA)",
-       y = "AP Frequency (Hz)",
-       color = NULL,
-       shape = NULL) +
-  scale_color_manual(values = c(baseline_group_colour, insulin_group_colour)) +
+  labs(
+    x = "Current Injection (pA)",
+    y = "AP Frequency (Hz)",
+    color = NULL,
+    shape = NULL
+  ) +
+  scale_color_manual(
+    values = c(baseline_group_colour, insulin_group_colour),
+    labels = c(
+      paste0("Baseline, n = ", ap_plot_baseline_count),
+      paste0("Insulin, n = ", ap_plot_insulin_count)
+    )
+  ) +
+  scale_shape_manual(
+    values = c(16, 17),
+    labels = c(
+      paste0("Baseline, n = ", ap_plot_baseline_count),
+      paste0("Insulin, n = ", ap_plot_insulin_count)
+    )
+  ) +
   theme(legend.position = "inside",
-        legend.position.inside = c(0.15, 0.8),
+        legend.position.inside = c(0.18, 0.8),
         legend.key.spacing.y = unit(1.5, "lines"),
         axis.title = element_text(face = "plain")) +
   scale_y_continuous(expand = expansion(mult = c(0.1, .1))) +
@@ -1677,7 +1706,7 @@ A current clamp steps protocol taken before and after insulin exposure showed th
   pull(p_string)`).
 
 ```{r AP-data-multiplot-figure, fig.width = 10, fig.height = 12, warning=F}
-#| fig.cap = "Insulin decreases the excitability of DMH neurons. Action potentials were recorded under baseline conditions (\``baseline\") and then 25 minutes after insulin exposure (\``Insulin\"). \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE). \\emph{B)} Representative action potential traces from a current injection of 40 pA (top: baseline, bottom: after insulin exposure). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing action potential half-widths \\emph{E)}. Insulin does not significantly affect action potential latency \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
+#| fig.cap = "Insulin decreases the excitability of DMH neurons. Data were recorded before and then after 25 minutes of insulin exposure. \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE). \\emph{B)} Representative traces from a current injection of 40 pA (top: baseline, bottom: insulin). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing half-widths \\emph{E)}. Insulin does not significantly affect latency to fire \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. n = 15 for baseline and 11 for insulin because 4 cells did not fire any action potentials after insulin exposure. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
 #| fig.scap = "Insulin changes action potential characteristics in DMH neurons",
 #| out.width = "90%"
 
