@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 15:41
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,14 +903,15 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 22.76219pt
 * modes: twoside 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* h-part:(L,W,R)=(72.26999pt, 446.99283pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
+* \textwidth=446.99283pt
 * \textheight=650.43001pt
-* \oddsidemargin=0.0pt
+* \oddsidemargin=22.76219pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
 * \headheight=12.0pt
@@ -984,25 +985,11 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
 ]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 223.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.99072pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.70767pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.41644pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.9915pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.70822pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.41406pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.98984pt on input line 229.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.70703pt on input line 229.
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 230.
 [2]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 36.0pt on input line 235.
+(Font)              scaled to size 36.0pt on input line 236.
 [1] (./Thesis.toc
 
 LaTeX Font Warning: Font shape `TU/EBGaramond(0)/b/n' undefined
@@ -1010,6 +997,22 @@ LaTeX Font Warning: Font shape `TU/EBGaramond(0)/b/n' undefined
 
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.99072pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.70767pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 11.41644pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.9915pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.70822pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.41406pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.98984pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.70703pt on input line 5.
 [2])
 \tf@toc=\write3
 \openout3 = `Thesis.toc'.
@@ -1022,21 +1025,18 @@ LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 20.74pt on input line 298.
-
-Underfull \vbox (badness 3375) has occurred while \output is active []
-
+(Font)              scaled to size 20.74pt on input line 299.
 [1]
 File: ../Figures/Insulin-schematic.png Graphic file (type bmp)
 <../Figures/Insulin-schematic.png>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 351.
-[2] [3] [4]
+(Font)              scaled to size 8.4pt on input line 352.
+[2] [3]
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+[4]
 File: ../Figures/DMH-Projections.png Graphic file (type bmp)
 <../Figures/DMH-Projections.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [5] [6]
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
@@ -1045,26 +1045,30 @@ Underfull \vbox (badness 6284) has occurred while \output is active []
 ]
 File: ../Figures/Methods-Patch-Clamp-Technique.png Graphic file (type bmp)
 <../Figures/Methods-Patch-Clamp-Technique.png>
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 541.
-
-Underfull \vbox (badness 3098) has occurred while \output is active []
-
-[8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[9] [10]
+[8] [9] [10]
 File: ../Figures/AP-Schematic.png Graphic file (type bmp)
 <../Figures/AP-Schematic.png>
 
-LaTeX Warning: Float too large for page by 4.02016pt on input line 635.
+Underfull \hbox (badness 1748) in paragraph at lines 654--662
+[]\TU/EBGaramond(0)/b/n/12 I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline.
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 654--662
+\TU/EBGaramond(0)/b/n/12 I then added 500 nM insulin to the perfusion solution and continued recording for 25
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 654--662
+\TU/EBGaramond(0)/b/n/12 minutes. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-
+ []
+
+
+Underfull \vbox (badness 3098) has occurred while \output is active []
 
 [11] [12]
 File: ../Figures/Evoked-Currents-Schematic.png Graphic file (type bmp)
 <../Figures/Evoked-Currents-Schematic.png>
-
-Underfull \vbox (badness 6016) has occurred while \output is active []
-
 [13]
 File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 <../Figures/Methods-Schematic-with-APs.png>
@@ -1073,35 +1077,54 @@ File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 ]
 File: Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [17] [18]
 File: Thesis_files/figure-latex/plot-control-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/plot-control-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [19] [20]
 File: Thesis_files/figure-latex/plot-HNMPA-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/plot-HNMPA-1.pdf>
 File: Thesis_files/figure-latex/plot-PPP-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/plot-PPP-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21] [22] [23]
 File: Thesis_files/figure-latex/plot-Fasting-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/plot-Fasting-1.pdf>
-[21] [22] [23] [24]
+
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+[24]
 File: Thesis_files/figure-latex/PPR-data-final-summary-plot-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/PPR-data-final-summary-plot-1.pdf>
 File: Thesis_files/figure-latex/treatment-comparisons-plot-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/treatment-comparisons-plot-1.pdf>
 
-Underfull \vbox (badness 1881) has occurred while \output is active []
-
-[25] [26]
-File: Thesis_files/figure-latex/plot-cell-coordinates-1.pdf Graphic file (type pdf)
-<use Thesis_files/figure-latex/plot-cell-coordinates-1.pdf>
-[27] [28
-
-] [29] [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[31] [32] [33] [34
+[25] [26] [27]
+File: Thesis_files/figure-latex/plot-cell-coordinates-1.pdf Graphic file (type pdf)
+<use Thesis_files/figure-latex/plot-cell-coordinates-1.pdf>
+[28] [29
 
-] [35] [36
+] [30]
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
+[31]
+Underfull \vbox (badness 2941) has occurred while \output is active []
+
+[32]
+Underfull \vbox (badness 2941) has occurred while \output is active []
+
+[33] [34] [35
+
+] [36
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1116,15 +1139,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [40]
-Underfull \hbox (badness 3701) in paragraph at lines 1568--1571
-[]\TU/EBGaramond(0)/b/n/12 Pedersen, T. L. (2024). \TU/EBGaramond(0)/m/it/12 Patchwork: The composer of plots\TU/EBGaramond(0)/b/n/12 . R package version 1.2.0.9000.
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Overfull \hbox (64.58229pt too wide) in paragraph at lines 1625--1629
+Overfull \hbox (87.34448pt too wide) in paragraph at lines 1626--1630
 []\TU/EBGaramond(0)/b/n/12 Statistics Canada. (2019). Overweight and obese adults. In \TU/EBGaramond(0)/m/it/12 Statistics Canada\TU/EBGaramond(0)/b/n/12 . https://www150.statcan.gc.ca/n1/pub/82-
  []
 
@@ -1143,7 +1161,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21133 strings out of 476717
  395701 string characters out of 5799454
- 1941148 words of memory out of 5000000
+ 1939148 words of memory out of 5000000
  42832 multiletter control sequences out of 15000+600000
  565702 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
