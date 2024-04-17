@@ -480,7 +480,7 @@ I measured electrophysiological parameters like evoked current amplitude and act
 I used the *abfTools* package (Version `r packageVersion("abftools")`; @wu2019) to obtain representative traces from raw recording files, and I made all plots with *ggplot2* (Version `r packageVersion("ggplot2")`; @wickham2016a). I used *Inkscape* (Version 1.3; @inkscapedevelopers2023), an open-source vector editor, to create the explanatory schematics. I also used Inkscape to remove stimulus artifacts on the representative traces on Figures \ref{summary-plot-control}, \ref{summary-plot-HNMPA}, \ref{summary-plot-PPP}, and \ref{summary-plot-fasting}.
 
 ```{r Include-figure-methods}
-#| fig.cap = "A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. \\label{methods-figure}",
+#| fig.cap = "A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. I also compared action potentials before and after adding insulin. \\label{methods-figure}",
 #| fig.scap = "I removed rat brains, recorded from DMH neurons, and compared recordings before and after insulin exposure",
 #| out.width = "100%",
 #| purl = FALSE
