@@ -402,7 +402,7 @@ The main question of this study is: Does insulin bind to DMH neurons, and if so,
 
 ## Animals
 
-I used young (28-44 days old) male and female Sprague-Dawley rats from Charles River Laboratories (Québec, Canada). The rats arrived when they were 22 days old, and they had a one-week acclimation period. The rats lived in groups of 4 with free access to standard rat chow and water. All cages had wood shavings for bedding, toys (wooden blocks and a plastic chew toy) for enrichment and Crawl Balls™ (Bio-Serv) for shelter. The animal rooms were maintained at 21$^{\circ}$C and 50% $\pm$ 10% humidity, with a 12-hour light/dark cycle. The Animal Care Committee at Mount Allison University approved the project (Protocol #103088).
+I used young (28-44 days old) male and female Sprague-Dawley rats from Charles River Laboratories (Québec, Canada) for all treatment groups. The rats arrived when they were 22 days old, and they had a one-week acclimation period. The rats lived in groups of 4 with free access to standard rat chow and water. All cages had wood shavings for bedding, toys (wooden blocks and a plastic chew toy) for enrichment and Crawl Balls™ (Bio-Serv) for shelter. The animal rooms were maintained at 21$^{\circ}$C and 50% $\pm$ 10% humidity, with a 12-hour light/dark cycle. The Animal Care Committee at Mount Allison University approved the project (Protocol #103088).
 
 ## Brain Removal & Slice Preparation
 
@@ -1530,30 +1530,6 @@ t_test_eEPSCs <- summary_df_insulin %>%
 saveRDS(t_test_eEPSCs, file = here("Data/Output-Data-from-R/t_test_eEPSCs.RDS"))
 ```
 
-
-
-
-<!-- *Discussion* -->
-<!-- -   AP Analysis -->
-<!-- -       Talk about AP frequency and other parameters -->
-<!-- -       Talk about what each parameter means for excitability -->
-<!-- -   eEPSC Analysis -->
-<!-- -       Talk about what decrease in currents means -->
-<!-- -       Control: plot -->
-<!-- -           Speed, what it means -->
-<!-- -           What a decrease in evoked excitatory currents means biologically -->
-<!-- -       Fasting plot -->
-<!-- -           No difference from control, implications for energy metabolism -->
-<!-- -       Wanted to explore mechanism -->
-<!-- -       HNMPA -->
-<!-- -           No difference, insulin likely does not require insulin receptors -->
-<!-- -       PPP Plot -->
-<!-- -           Maybe a difference, insulin may require insulin-like growth factor 1 receptors -->
-<!-- -       Mechanism: Discuss potential involvement of MTORC1 pathway -->
-<!-- -   PPR -->
-<!-- -       What this indicates about the method of synaptic transmission -->
-<!-- -       What it means that the PPR did not change much -->
-
 ```{r PPR-data-create-dataframe-for-t-test, warning=F, message=F}
 # -------------------- PPR Analysis: Create dataframe for t-tests ----------------
 PPR_df <- raw_df %>%
@@ -1706,7 +1682,7 @@ A current clamp steps protocol taken before and after insulin exposure showed th
   pull(p_string)`).
 
 ```{r AP-data-multiplot-figure, fig.width = 10, fig.height = 12, warning=F}
-#| fig.cap = "Insulin decreases the excitability of DMH neurons. Data were recorded before and then after 25 minutes of insulin exposure. \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE). \\emph{B)} Representative traces from a current injection of 40 pA (top: baseline, bottom: insulin). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing half-widths \\emph{E)}. Insulin does not significantly affect latency to fire \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. n = 15 for baseline and 11 for insulin because 4 cells did not fire any action potentials after insulin exposure. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
+#| fig.cap = "Insulin decreases the excitability of DMH neurons. Data were recorded before and then after 25 minutes of insulin exposure. \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE; \\emph{n} is the number of cells). \\emph{B)} Representative traces from a current injection of 40 pA (top: baseline, bottom: insulin). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing half-widths \\emph{E)}. Insulin does not significantly affect latency to fire \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. \\emph{n} = 15 for baseline and \\emph{n} = 11 for insulin because 4 cells did not fire any action potentials after insulin exposure. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
 #| fig.scap = "Insulin changes action potential characteristics in DMH neurons",
 #| out.width = "90%"
 
@@ -1879,7 +1855,7 @@ Insulin-like growth factor receptors have many structural similarities to insuli
 
 ```{r plot-PPP}
 #| fig.dim = c(8,5),
-#| fig.cap = "Insulin does not significantly decrease current amplitude over time with PPP present. PPP is an insulin-like growth factor 1 receptor antagonist. Since blocking these receptors reduced the changes in excitatory synaptic transmission seen in control recordings, insulin may require insulin-like growth factor 1 receptors to act on DMH neurons. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). The representative traces consist of eEPSCs from one cell averaged over the baseline period (0 to 5 min) and last interval (20 to 25 min) of the recording, and the scale bar represents 50 pA/20 ms. \\label{summary-plot-PPP}",
+#| fig.cap = "Insulin does not significantly decrease current amplitude over time with PPP present. PPP is an insulin-like growth factor 1 receptor antagonist. Since blocking these receptors reduced the changes in excitatory synaptic transmission seen in control recordings, insulin may require insulin-like growth factor 1 receptors to act on DMH neurons. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. There are no asterisks because the decrease in eEPSC amplitude was not statistically significant relative to the baseline. The representative traces consist of eEPSCs from one cell averaged over the baseline period (0 to 5 min) and last interval (20 to 25 min) of the recording, and the scale bar represents 50 pA/20 ms. \\label{summary-plot-PPP}",
 #| fig.scap = "Insulin may bind to insulin-like growth factor 1 receptors to influence excitatory synaptic transmission at DMH neurons",
 #| out.width = "100%"
 make_pruned_summary_plots(category = 2,
@@ -1942,7 +1918,7 @@ To further explore the mechanism of insulin signalling at the DMH, I used a pair
   pull(p_string)`), suggesting that preventing insulin from binding to insulin receptors may activate an alternative presynaptic mechanism that ultimately results in the same decrease in excitatory synaptic transmission.
 
 ```{r PPR-data-final-summary-plot, warning=F, message=F}
-#| fig.cap = "The paired pulse ratio (PPR) did not change significantly after insulin exposure for most of the treatment groups. The change in the PPR relative to the baseline was non-significant for the control, fasting, and PPP treatment groups, but it was statistically significant for the HNMPA-treated cells. Each dot represents the mean PPR of a single cell averaged over the baseline period (0 to 5 minutes) or the last 20 to 25 minutes of the evoked currents protocol. The asterisks indicate a statistically significant difference in the PPR between the two intervals (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). \\label{ppr-comparisons-plot}",
+#| fig.cap = "The paired pulse ratio (PPR) did not change significantly after insulin exposure for most of the treatment groups. The change in the PPR relative to the baseline was non-significant for the control, fasting, and PPP treatment groups, but it was statistically significant for the HNMPA-treated cells. Each dot represents the mean PPR of a single cell averaged over the baseline period (0 to 5 minutes) or the last 20 to 25 minutes of the evoked currents protocol. The asterisks indicate a statistically significant difference in the PPR between the two intervals (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). The solid black circle and triangle overlay represents the mean PPR (± SE) per sex. \\label{ppr-comparisons-plot}",
 #| fig.scap = "The paired pulse ratio did not change significantly after insulin exposure for most treatment groups",
 #| out.width = "100%"
 
@@ -2174,12 +2150,6 @@ When HNMPA was present, the paired pulse ratio increased significantly after ins
 ## Does sex matter?
 
 In all treatments, DMH neurons responded similarly to insulin in males and females. When observing changes in evoked current amplitudes, I found no significant differences between the sexes over time. These findings suggest that there are no sex-based differences in the intracellular pathways affected by insulin. However, this does not mean that insulin signalling is completely independent of sex. All rats were younger than 44 days old, which is less than the average onset of puberty [@mccutcheon&marinelli2009]. At this age, many sex-based differences are not yet present. Experiments with older animals are required before any conclusive sex-based differences can be determined.
-
-<!-- Neurons use both electrical and chemical signals to transfer information between one another. Chemical signals include neurotransmitters that can either increase the activity of the receiving neuron (called excitatory neurotransmitters) or decrease it (inhibitory neurotransmitters). This study measured currents associated with the excitatory neurotransmitter glutamate, which indicated the level of communication between neurons. Since excitatory current amplitudes in DMH neurons decreased over time, it meant that insulin decreased communication between DMH neurons. -->
-
-<!-- Another possible mechanism is that insulin decreases neuronal communication by *increasing* inhibitory signalling, perhaps by increasing the concentration of ions that increase the release of inhibitory neurotransmitters [@jonasetal1997]. The resulting inhibitory currents could then override the excitatory currents, "cancelling out" the effect of any excitatory neurotransmitter. Wan et al. [-@wanetal1997] found one such mechanism of suppression, in which insulin decreased neuronal communication not by decreasing glutamate signalling, but rather through an increase in GABA signalling. -->
-
-<!-- Within 10 minutes of exposing DMH neurons to insulin, most currents had decreased to less than 75% of their original amplitudes. The fast response to insulin provides some insight into which processes may be activated by insulin. Changing receptors on the surfaces of neurons is a relatively fast process [@wanetal1997], so perhaps insulin may increase the number of GABA receptors on DMH neurons, making them more likely to be inhibited. To determine whether insulin decreases neuronal communication through the suppression of excitatory signalling or an increase of inhibitory signalling, future studies could measure GABA signalling. If GABA signalling increases after exposing DMH neurons to insulin, this will provide support that insulin uses changes in GABA receptor expression to inhibit neuronal communication in the DMH. -->
 
 ## What are the next steps?
 
