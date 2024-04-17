@@ -462,7 +462,7 @@ I analyzed the evoked current data for all treatments. I started by normalizing 
 ```{r include-figure-evoked-currents}
 #| fig.cap = "For the evoked currents protocol, the cell experienced two electrical stimuli 50 ms apart, repeated every 5 seconds. This created evoked currents, which I recorded and compared. I measured changes in the amplitude of the first evoked current (blue) over time. I also analyzed changes in the paired pulse ratio (PPR), which is the ratio of the second evoked current to the first evoked current. If the PPR changed throughout the recording, it indicated that the change in evoked current amplitude occured through a presynaptic mechanism (Manita et al., 2007). \\label{evoked-currents-schematic}",
 #| fig.scap = "A schematic of the evoked currents protocol.",
-#| out.width = "95%",
+#| out.width = "100%",
 #| purl = FALSE
 knitr::include_graphics(here("Figures/Evoked-Currents-Schematic.png"))
 ```
@@ -1660,7 +1660,7 @@ A current clamp steps protocol taken before and after insulin exposure showed th
 ```{r AP-data-multiplot-figure, fig.width = 10, fig.height = 12, warning=F}
 #| fig.cap = "Insulin decreases the excitability of DMH neurons. Data were recorded before and then after 25 minutes of insulin exposure. \\emph{A)} Insulin significantly decreases action potential frequency (mean ± SE; \\emph{n} is the number of cells). \\emph{B)} Representative traces from a current injection of 40 pA (top: baseline, bottom: insulin). \\emph{C)} Insulin significantly decreases action potential amplitudes \\emph{C)} and thresholds \\emph{D)}, while significantly increasing half-widths \\emph{E)}. Insulin does not significantly affect latency to fire \\emph{F)}, after-hyperpolarization amplitude \\emph{G)} or after-hyperpolarization time \\emph{H)}. Overlay on Figures C-H: mean ± SE. \\emph{n} = 15 for baseline and \\emph{n} = 11 for insulin because 4 cells did not fire any action potentials after insulin exposure. Wilcoxon signed-rank test, * = p < 0.05, ** = p < 0.01, *** = p < 0.001. \\label{ap-multiplot-figure}",
 #| fig.scap = "Insulin changes action potential characteristics in DMH neurons",
-#| out.width = "90%"
+#| out.width = "97%"
 
 # ----------------------- AP Analysis: Full Multiplot Figure -----------------------------------
 full_ap_multiplot <-
@@ -2075,7 +2075,7 @@ Thank you to Ruby, and all the rats.
 
 \end{centering}
 ```
-*This research was partly funded by a grant from the Natural Sciences and Engineering Research Council of Canada (NSERC) held by my supervisor. I also received funding from Research New Brunswick Summer Studentship (2023).*
+*This research was partly funded by a grant from the Natural Sciences and Engineering Research Council of Canada (NSERC) held by my supervisor. I also received funding through the Research New Brunswick Summer Studentship (2023).*
 
 \cleardoublepage
 

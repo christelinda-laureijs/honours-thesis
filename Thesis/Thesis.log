@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 16:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,6 +1069,9 @@ Underfull \vbox (badness 3098) has occurred while \output is active []
 [11] [12]
 File: ../Figures/Evoked-Currents-Schematic.png Graphic file (type bmp)
 <../Figures/Evoked-Currents-Schematic.png>
+
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
 [13]
 File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 <../Figures/Methods-Schematic-with-APs.png>
@@ -1077,6 +1080,9 @@ File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 ]
 File: Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf>
+
+LaTeX Warning: Float too large for page by 10.36507pt on input line 786.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
