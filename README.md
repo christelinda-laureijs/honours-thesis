@@ -25,6 +25,8 @@ recorded excitatory evoked currents (a measure of synaptic transmission)
 and action potentials (a measure of excitability) before and after
 exposing neurons to 500 nM of insulin.
 
+<img src="Figures/Methods-Schematic-with-APs.png" alt="A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. I also compared action potentials before and after adding insulin." width="2187" style="display: block; margin: auto;" />
+
 ## Goals
 
 I developed this code to achieve the following goals:

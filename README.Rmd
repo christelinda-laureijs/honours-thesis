@@ -12,7 +12,7 @@ output:
     keep_md: true
 ---
 
-```{r fig.align = 'center', fig.alt = "Cover image displaying the text 'Insulin in the Brain' with background graphics of a rat, a neuron and a cartoon representation of insulin", echo=F}
+```{r cover-image, fig.align = 'center', fig.alt = "Cover image displaying the text 'Insulin in the Brain' with background graphics of a rat, a neuron and a cartoon representation of insulin", echo=F}
 
 knitr::include_graphics(here::here("Figures/Presentation-Images/Cover-Image.png"))
 ```
@@ -22,6 +22,10 @@ knitr::include_graphics(here::here("Figures/Presentation-Images/Cover-Image.png"
 Insulin is a hormone associated with processes like blood glucose regulation, and it also acts in the brain. For my honours project, I explored the effect of insulin on neurons in a brain region called the dorsomedial hypothalamus (DMH). DMH neurons stimulate appetite and they also have insulin receptors, but almost nothing is known about the effect of insulin on neuronal activity in the DMH.
 
 I used whole-cell patch clamp electrophysiology to record from the living DMH neurons of young, male and female Sprague-Dawley rats. I recorded excitatory evoked currents (a measure of synaptic transmission) and action potentials (a measure of excitability) before and after exposing neurons to 500 nM of insulin.
+
+```{r methods-summary, fig.align = 'center', fig.alt = "A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. I also compared action potentials before and after adding insulin.", echo=F}
+knitr::include_graphics(here::here("Figures/Methods-Schematic-with-APs.png"))
+```
 
 ## Goals
 
