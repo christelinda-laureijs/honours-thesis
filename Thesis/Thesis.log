@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 14:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1089,7 +1089,7 @@ File: Thesis_files/figure-latex/PPR-data-final-summary-plot-1.pdf Graphic file (
 File: Thesis_files/figure-latex/treatment-comparisons-plot-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/treatment-comparisons-plot-1.pdf>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1881) has occurred while \output is active []
 
 [25] [26]
 File: Thesis_files/figure-latex/plot-cell-coordinates-1.pdf Graphic file (type pdf)
@@ -1116,7 +1116,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [40]
-Underfull \hbox (badness 3701) in paragraph at lines 1547--1550
+Underfull \hbox (badness 3701) in paragraph at lines 1568--1571
 []\TU/EBGaramond(0)/b/n/12 Pedersen, T. L. (2024). \TU/EBGaramond(0)/m/it/12 Patchwork: The composer of plots\TU/EBGaramond(0)/b/n/12 . R package version 1.2.0.9000.
  []
 
@@ -1124,7 +1124,7 @@ Underfull \hbox (badness 3701) in paragraph at lines 1547--1550
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Overfull \hbox (64.58229pt too wide) in paragraph at lines 1604--1608
+Overfull \hbox (64.58229pt too wide) in paragraph at lines 1625--1629
 []\TU/EBGaramond(0)/b/n/12 Statistics Canada. (2019). Overweight and obese adults. In \TU/EBGaramond(0)/m/it/12 Statistics Canada\TU/EBGaramond(0)/b/n/12 . https://www150.statcan.gc.ca/n1/pub/82-
  []
 
