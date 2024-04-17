@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  16 APR 2024 17:28
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  16 APR 2024 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,7 +1088,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Thesis_files/figure-latex/plot-Fasting-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/plot-Fasting-1.pdf>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7685) has occurred while \output is active []
 
 [24]
 File: Thesis_files/figure-latex/PPR-data-final-summary-plot-1.pdf Graphic file (type pdf)

@@ -1778,6 +1778,11 @@ male_control_trace <- png::readPNG(here("Figures/Representative-Traces/Male-Cont
 female_control_trace <- png::readPNG(here("Figures/Representative-Traces/Female-Control-Trace-AV.png")) %>% rasterGrob()
 male_HNMPA_trace <- png::readPNG(here("Figures/Representative-Traces/Male-HNMPA-Trace-BO.png")) %>% rasterGrob()
 
+male_fasting_trace <- png::readPNG(here("Figures/Representative-Traces/Male-Fasting-Trace-FG.png")) %>% rasterGrob()
+
+female_PPP_trace <- png::readPNG(here("Figures/Representative-Traces/Female-PPP-Trace-GF.png")) %>% rasterGrob()
+
+
 ```
 
 
@@ -1845,13 +1850,14 @@ Insulin-like growth factor receptors have many structural similarities to insuli
 
 ```{r plot-PPP}
 #| fig.dim = c(8,5),
-#| fig.cap = "Insulin does not significantly decrease current amplitude over time with PPP present. PPP is an insulin-like growth factor 1 receptor antagonist. Since blocking these receptors reduced the changes in excitatory synaptic transmission seen in control recordings, insulin may require insulin-like growth factor 1 receptors to act on DMH neurons. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). \\label{summary-plot-PPP}",
+#| fig.cap = "Insulin does not significantly decrease current amplitude over time with PPP present. PPP is an insulin-like growth factor 1 receptor antagonist. Since blocking these receptors reduced the changes in excitatory synaptic transmission seen in control recordings, insulin may require insulin-like growth factor 1 receptors to act on DMH neurons. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). The representative traces consist of eEPSCs from one cell averaged over the baseline period (0 to 5 min) and last interval (20 to 25 min) of the recording, and the scale bar represents 50 pA/20 ms. \\label{summary-plot-PPP}",
 #| fig.scap = "Insulin may bind to insulin-like growth factor 1 receptors to influence excitatory synaptic transmission at DMH neurons",
 #| out.width = "100%"
 make_pruned_summary_plots(category = 2,
                          treatment = "PPP",
                          data = pruned_df,
-                         color_choice = 2)
+                         color_choice = 2) +
+ annotation_custom(female_PPP_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
 ```
 
 ## Feeding state does not affect insulin signalling in DMH neurons
@@ -1866,13 +1872,14 @@ Since insulin and DMH neurons are both involved with appetite and digestion [@de
 
 ```{r plot-Fasting}
 #| fig.dim = c(8,5),
-#| fig.cap = "Insulin significantly decreases current amplitude over time in both sexes after a 24 hour fasting protocol. This suggests that insulin signalling in the DMH is associated with processes beyond appetite regulation. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). \\label{summary-plot-fasting}",
+#| fig.cap = "Insulin significantly decreases current amplitude over time in both sexes after a 24 hour fasting protocol. This suggests that insulin signalling in the DMH is associated with processes beyond appetite regulation. Each point represents the mean ± SE eEPSC amplitude and \\emph{n} represents the number of unique cells. The asterisks indicate a statistically significant decrease in current amplitude relative to the baseline (t-test; * = p < 0.05, ** = p < 0.01, *** = p < 0.001). The representative traces consist of eEPSCs from one cell averaged over the baseline period (0 to 5 min) and last interval (20 to 25 min) of the recording, and the scale bar represents 50 pA/20 ms. \\label{summary-plot-fasting}",
 #| fig.scap = "Insulin signalling at the excitatory synapses of DMH neurons is independent of feeding state",
 #| out.width = "100%"
 make_pruned_summary_plots(category = 2,
                          treatment = "Fasting",
                          data = pruned_df,
-                         color_choice = 3)
+                         color_choice = 3) +
+ annotation_custom(male_fasting_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
 ```
 
 ## Synaptic transmission is likely affected by a postsynaptic mechanism
