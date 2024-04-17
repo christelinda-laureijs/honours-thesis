@@ -89,11 +89,7 @@ run time.
 `my_colours`: Use these to define the colours globally. The main project
 palette is:
 
-- `#6600cc`
-- `#0093fb`
-- `#55b323`
-- `#ffe70f`
-- `#e86c00`
+<img src="Figures/Colour-Palette.png" alt="Cover image displaying the text 'Insulin in the Brain' with background graphics of a rat, a neuron and a cartoon representation of insulin" width="1241" style="display: block; margin: auto;" />
 
 To generate the thesis as a PDF file, go to the **Thesis/** folder, open
 the `Thesis.Rmd` file and click the `Knit` button. If you just want to
