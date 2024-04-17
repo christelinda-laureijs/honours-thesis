@@ -483,7 +483,7 @@ Using the raw data (i.e. the non-normalized data), I divided the amplitude of th
 
 I measured electrophysiological parameters like evoked current amplitude and action potential properties using *Clampfit* (Version 10.6.0.13, Molecular Devices). I performed all statistical analyses with *R Statistical Software* (`r paste0("Version ",substr(version$version.string,11,15))`; R Core Team 2021) in *RStudio* (Build 369; @rstudioteam2020). I used $\alpha$ = 0.05 for all tests.
 
-I used the *abfTools* package (Version `r packageVersion("abftools")`; @wu2019) to obtain representative traces from raw recording files, and I made all plots with *ggplot2* (Version `r packageVersion("ggplot2")`; @wickham2016a). I used *Inkscape* (Version 1.3; @inkscapedevelopers2023), an open-source vector editor, to create the explanatory schematics.
+I used the *abfTools* package (Version `r packageVersion("abftools")`; @wu2019) to obtain representative traces from raw recording files, and I made all plots with *ggplot2* (Version `r packageVersion("ggplot2")`; @wickham2016a). I used *Inkscape* (Version 1.3; @inkscapedevelopers2023), an open-source vector editor, to create the explanatory schematics. I also used Inkscape to remove stimulus artifacts on the representative traces on Figures \ref{summary-plot-control}, \ref{summary-plot-HNMPA}, \ref{summary-plot-PPP}, and \ref{summary-plot-fasting}.
 
 ```{r Include-figure-methods}
 #| fig.cap = "A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. \\label{methods-figure}",
