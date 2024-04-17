@@ -1803,8 +1803,8 @@ female_PPP_trace <- png::readPNG(here("Figures/Representative-Traces/Female-PPP-
 make_pruned_summary_plots(category = 2,
                          treatment = "Control",
                          data = pruned_df,
-                         color_choice = 1) +
- annotation_custom(female_control_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
+                         color_choice = 1,
+                         representative_trace = female_control_trace)
 
 ```
 
@@ -1836,8 +1836,8 @@ After verifying that insulin acts on DMH neurons, the next step was to determine
 make_pruned_summary_plots(category = 2,
                           treatment = "HNMPA",
                           data = pruned_df,
-                          color_choice = 5) +
- annotation_custom(male_HNMPA_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
+                          color_choice = 5,
+                          representative_trace = male_HNMPA_trace)
 ```
 
 Insulin-like growth factor receptors have many structural similarities to insulin receptors and they are also responsive to insulin [@nagaoetal2021]. I performed the evoked currents protocol in the presence of an insulin-like growth factor 1 receptor antagonist (PPP). With PPP present, insulin did not significantly decrease evoked current amplitudes over time, even 20 minutes after adding insulin (\emph{t}(`r t_test_eEPSCs %>%
@@ -1856,8 +1856,8 @@ Insulin-like growth factor receptors have many structural similarities to insuli
 make_pruned_summary_plots(category = 2,
                          treatment = "PPP",
                          data = pruned_df,
-                         color_choice = 2) +
- annotation_custom(female_PPP_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
+                         color_choice = 2,
+                         representative_trace = female_PPP_trace)
 ```
 
 ## Feeding state does not affect insulin signalling in DMH neurons
@@ -1878,8 +1878,8 @@ Since insulin and DMH neurons are both involved with appetite and digestion [@de
 make_pruned_summary_plots(category = 2,
                          treatment = "Fasting",
                          data = pruned_df,
-                         color_choice = 3) +
- annotation_custom(male_fasting_trace, xmin = 1, xmax = 8, ymin = 0, ymax = 40)
+                         color_choice = 3,
+                         representative_trace = male_fasting_trace)
 ```
 
 ## Synaptic transmission is likely affected by a postsynaptic mechanism
