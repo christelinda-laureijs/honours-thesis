@@ -17,7 +17,6 @@ output:
 knitr::include_graphics(here::here("Figures/Presentation-Images/Cover-Image.png"))
 ```
 
-
 ## Background
 
 Insulin is a hormone associated with processes like blood glucose regulation, and it also acts in the brain. For my honours project, I explored the effect of insulin on neurons in a brain region called the dorsomedial hypothalamus (DMH). DMH neurons stimulate appetite and they also have insulin receptors, but almost nothing is known about the effect of insulin on neuronal activity in the DMH.
@@ -31,14 +30,14 @@ I developed this code to achieve the following goals:
 -   Analyze changes in current amplitudes (evoked excitatory post-synaptic currents; eEPSCs) over time
 -   Analyze changes in action potential parameters before and after insulin exposure
 -   Group and summarize the raw data into publication-ready plots
--   Perform appropriate statistical tests on the raw data 
+-   Perform appropriate statistical tests on the raw data
 -   Compile my thesis in a print-ready format with embedded code and figures
 
 ## Instructions
 
 You could clone the repository using git clone:
 
-```
+```         
 git clone https://github.com/christelinda-laureijs/honours-thesis.git
 ```
 
@@ -88,6 +87,8 @@ To generate the thesis as a PDF file, go to the **Thesis/** folder, open the `Th
 
 -   *Scripts-from-Thesis-Rmd.R* contains just the R code contained within code chunks of the `Thesis.Rmd` file. This is useful if you want to quickly run the same script without needing to scroll past the thesis text. It is also useful for debugging; just make sure that you make changes within the main `Thesis.Rmd`file, not the script.
 
+Use the following code to extract just the scripts from the thesis:
+
 ```{r eval=F, message=F, warning=F}
 knitr::purl(
   input = here::here("Thesis/Thesis.Rmd"),
@@ -96,9 +97,8 @@ knitr::purl(
 )
 ```
 
-
-
 **Templates/** - Contains my custom style templates:
+
 -   *MtA-Thesis-Preamble.tex* for PDF
 -   *my-CSS-theme.css* for HTML
 -   *thesis-citations.bib* for all in-text citations.
@@ -112,7 +112,7 @@ knitr::purl(
 
 ## Metadata {#metadata}
 
-These are all variables included the dataframe. Values marked with a * will be automatically generated during the R script.
+These are all variables included the dataframe. Values marked with a \* will be automatically generated during the R script.
 
 ```{r import-variable-explanations, echo=FALSE, warning=FALSE, message=FALSE}
 variable_explanations <- read.csv("Data/Variable-Explanations.csv", header = T)
@@ -120,7 +120,7 @@ variable_explanations <- read.csv("Data/Variable-Explanations.csv", header = T)
 knitr::kable(variable_explanations)
 ```
 
-Additional notes about some variables: 
+Additional notes about some variables:
 
 **Category**: I assigned each experiment type with its own number ID and used this convention for all scripts.
 
@@ -138,6 +138,6 @@ Additional notes about some variables:
 -   *AM251* blocks CB1 cannabinoid receptors.
 -   *Fasting* marks experiments in which I removed food from the rats 24 hours before euthanization.
 
-**P1 and P2**: Although the raw values were in pA, I normalized these values relative to the baseline current for each cell. The resulting percent data has **_transformed** in the variable name.
+**P1 and P2**: Although the raw values were in pA, I normalized these values relative to the baseline current for each cell. The resulting percent data has `_transformed` in the variable name.
 
 **Interval**: I named each interval 't_to\_' to avoid using numbers and special characters in variable names.

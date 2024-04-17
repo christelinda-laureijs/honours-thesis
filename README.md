@@ -128,6 +128,8 @@ starting with **Output-**. Also contains the folders
   text. It is also useful for debugging; just make sure that you make
   changes within the main `Thesis.Rmd`file, not the script.
 
+Use the following code to extract just the scripts from the thesis:
+
 ``` r
 knitr::purl(
   input = here::here("Thesis/Thesis.Rmd"),
@@ -136,10 +138,12 @@ knitr::purl(
 )
 ```
 
-**Templates/** - Contains my custom style templates: -
-*MtA-Thesis-Preamble.tex* for PDF - *my-CSS-theme.css* for HTML -
-*thesis-citations.bib* for all in-text citations. - *packages.bib* for
-all R packages used in my scripts
+**Templates/** - Contains my custom style templates:
+
+- *MtA-Thesis-Preamble.tex* for PDF
+- *my-CSS-theme.css* for HTML
+- *thesis-citations.bib* for all in-text citations.
+- *packages.bib* for all R packages used in my scripts
 
 > The MtA-Thesis-Preamble.tex requires additional LaTeX packages, and it
 > may take some time to run the first time as it installs them. This
@@ -204,7 +208,7 @@ which was repeated again after a 20-second interval.
 
 **P1 and P2**: Although the raw values were in pA, I normalized these
 values relative to the baseline current for each cell. The resulting
-percent data has \*\*\_transformed\*\* in the variable name.
+percent data has `_transformed` in the variable name.
 
 **Interval**: I named each interval ‘t_to\_’ to avoid using numbers and
 special characters in variable names.
