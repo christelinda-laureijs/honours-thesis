@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 20:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  17 APR 2024 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,29 +1049,11 @@ File: ../Figures/Methods-Patch-Clamp-Technique.png Graphic file (type bmp)
 File: ../Figures/AP-Schematic.png Graphic file (type bmp)
 <../Figures/AP-Schematic.png>
 
-Underfull \hbox (badness 1748) in paragraph at lines 654--662
-[]\TU/EBGaramond(0)/b/n/12 I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline.
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 654--662
-\TU/EBGaramond(0)/b/n/12 I then added 500 nM insulin to the perfusion solution and continued recording for 25
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 654--662
-\TU/EBGaramond(0)/b/n/12 minutes. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-
- []
-
-
-Underfull \vbox (badness 3098) has occurred while \output is active []
+Underfull \vbox (badness 3646) has occurred while \output is active []
 
 [11] [12]
 File: ../Figures/Evoked-Currents-Schematic.png Graphic file (type bmp)
 <../Figures/Evoked-Currents-Schematic.png>
-
-Underfull \vbox (badness 1043) has occurred while \output is active []
-
 [13]
 File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 <../Figures/Methods-Schematic-with-APs.png>
@@ -1081,7 +1063,7 @@ File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 File: Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf>
 
-LaTeX Warning: Float too large for page by 10.36507pt on input line 786.
+LaTeX Warning: Float too large for page by 10.36507pt on input line 791.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1142,7 +1124,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41]
-Overfull \hbox (87.34448pt too wide) in paragraph at lines 1637--1641
+Overfull \hbox (87.34448pt too wide) in paragraph at lines 1642--1646
 []\TU/EBGaramond(0)/b/n/12 Statistics Canada. (2019). Overweight and obese adults. In \TU/EBGaramond(0)/m/it/12 Statistics Canada\TU/EBGaramond(0)/b/n/12 . https://www150.statcan.gc.ca/n1/pub/82-
  []
 
@@ -1164,7 +1146,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21129 strings out of 476717
  395650 string characters out of 5799454
- 1938148 words of memory out of 5000000
+ 1939148 words of memory out of 5000000
  42828 multiletter control sequences out of 15000+600000
  565702 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191

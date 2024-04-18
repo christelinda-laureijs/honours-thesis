@@ -43,7 +43,7 @@ nocite: |
 # ------------ Set chunk options --------------------------------------------------------------
 # cairo_pdf encodes high-quality plots with searchable text
 # Hide chunk warnings to reduce distractions
-# comment = NA removes the double hashtags next to chunk output
+# comment = NA removes the double hash tags next to chunk output
 
 knitr::opts_chunk$set(
   dev = c("cairo_pdf"),
@@ -74,7 +74,7 @@ library(abftools) # Required to read in .ABF files
 
 # Data Management
 
-library(tidyr) # Reformat dataframes from wide to long and vice versa 
+library(tidyr) # Reformat data frames from wide to long and vice versa 
 library(dplyr) # Data manipulation
 library(stringr) # Manipulating text objects
 library(glue) # Required for easy mixing of variables and text when naming objects
@@ -358,7 +358,7 @@ Insulin is a hormone that regulates blood glucose levels, digestive processes, a
   # As you can see in Figure \ref{label}...
 
 # fig.scap = short caption that LaTeX will use in the List of Figures
-# out.width = 100% of linewidth
+# out.width = 100% of line width
 # Excluded from Scripts-from-Thesis-Rmd.R (purl = FALSE) because this is for the thesis only
 
 knitr::include_graphics(here("Figures/Insulin-schematic.png"))
@@ -453,7 +453,7 @@ knitr::include_graphics(here("Figures/AP-Schematic.png"))
 
 During the evoked currents protocol, the software maintained the cell at a membrane potential of -70 mV, which is close to a DMH neuron's natural resting membrane potential of -60 mV [@baileyetal2003]. Through the stimulating pipette, the software delivered two electrical stimuli 50 ms apart, repeated every 5 seconds (Figure \ref{evoked-currents-schematic}). The stimuli induced nearby neurons to release glutamate onto the target cell, which then experienced a temporary change in membrane potential. These currents are called evoked excitatory post-synaptic currents (eEPSCs, or "evoked currents") because they are a) artificially induced, b) caused by an excitatory neurotransmitter, and c) present in the cell that receives the neurotransmitters, not the presynaptic cell.
 
-I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline. I then added 500 nM insulin to the perfusion solution and continued recording for 25 minutes. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-naphthalenylmethylphosphonic acid; HNMPA, Abcam Incorporated; 300 $\mu$M) and an insulin-like growth factor 1 receptor blocker (picropodophyllotoxin; PPP, 0.5 $\mu$M; Selleck Chemicals) to explore insulin's binding mechanisms.
+I recorded evoked excitatory currents for 5 minutes under control conditions as a baseline. I then added 500 nM insulin to the perfusion solution and continued recording for 25 minutes. The concentration of insulin applied during the recordings is much higher than the 0.16 nM hypothalamic insulin concentration reported by Baskin et al. (1983). However, this concentration is comparable to past work examining excitatory synaptic transmission in other brain areas [@labouebeetal2013; @wang&linden2000]. I also applied insulin in the presence of an insulin receptor blocker (Hydroxy-2-naphthalenylmethylphosphonic acid; HNMPA; 300 $\mu$M; Abcam Incorporated) and an insulin-like growth factor 1 receptor blocker (picropodophyllotoxin; PPP; 0.5 $\mu$M; Selleck Chemicals) to explore insulin's binding mechanisms.
 
 To determine if insulin signalling in the DMH varies with feeding state, I placed a rat alone into a cage with no food for 24 hours before brain removal. During this period, the rat had free access to water, toys for environmental enrichment, bedding, and shelter. Removing food creates a hunger state, which would potentially alter insulin signalling at the DMH.
 
@@ -469,7 +469,7 @@ knitr::include_graphics(here("Figures/Evoked-Currents-Schematic.png"))
 
 ## Paired Pulse Ratio
 
-The paired pulse ratio (PPR) is the ratio between the second and first evoked currents (Figure \ref{evoked-currents-schematic}). Since the PPR is a measure of the probability of neurotransmitter release [@manitaetal2007], changes in the PPR over time can provide information about the mechanism of synaptic transmission. If the PPR changes throughout the recording, this indicates that a presynaptic mechanism had changed. If the PPR does not change, this indicates that a change had occured post-synaptically.
+The paired pulse ratio (PPR) is the ratio between the second and first evoked currents (Figure \ref{evoked-currents-schematic}). Since the PPR is a measure of the probability of neurotransmitter release [@manitaetal2007], changes in the PPR over time can provide information about the mechanism of synaptic transmission. If the PPR changes throughout the recording, this indicates that a presynaptic mechanism had changed. If the PPR does not change, this indicates that a change had occurred post-synaptically.
 
 Using the raw data (i.e. the non-normalized data), I divided the amplitude of the second evoked current by the first evoked current to obtain the PPR. I then filtered the PPRs to values within a range of 0 to 5 and averaged the PPR across the baseline period (0 to 5 minutes) and final interval (20 to 25 minutes) within each cell and used a paired T-test to compare the PPR across these two periods.
 
@@ -556,7 +556,7 @@ list_of_AP_parameters <-
 scale_bar_x_in_recording_time_units <- 500
 scale_bar_y_in_mV <- 20
 
-# Manually reposition the text labels on the scale bar
+# Manually re-position the text labels on the scale bar
 scale_bar_shift_y <- 10
 scale_bar_shift_x <- 40
 
@@ -657,7 +657,7 @@ max_mean_AP_frequencies <- full_ap_df %>%
 ```{r AP-data-t-test-AP-frequency, include=F}
 # --------------------- AP Analysis: T-Test of AP Frequency per Step
 # I saved this to a dataframe so I could later add significance asterisks to my plot through geom_text()
-# "ns" is distracting in plots, so I replaced it with whitespace
+# "ns" is distracting in plots, so I replaced it with white-space
 
 # Included here for future testing only
 # The data are non-normal, so I used a Wilcoxon test for my analysis
@@ -1752,7 +1752,7 @@ kable_manovar_table_eEPSC
 
 ## Insulin may bind to insulin-like growth factor 1 receptors on DMH neurons
 
-After verifying that insulin acts on DMH neurons, the next step was to determine which receptors insulin can bind to. I performed the same evoked currents protocol, but with HNMPA in the intracellular solution. HNMPA is an insulin receptor antagonist that inhibits tyrosine kinase activity [@sapersteinetal1989]. Since insulin receptors belong to the tyrosine kinase superfamily [@demeyts2000], HNMPA would have blocked insulin from binding to insulin receptors. However, insulin also significantly decreased evoked current amplitudes witin the first 5 minutes of exposure (\emph{t}(`r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(df)`) = `r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(statistic)`, \emph{p} = `r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(p_string)`; Figure \ref{summary-plot-HNMPA}) even with HNMPA present. Since DMH neurons show the same response to insulin with HNMPA relative to control conditions, this suggested that insulin acts on DMH neurons through a different receptor.
+After verifying that insulin acts on DMH neurons, the next step was to determine which receptors insulin can bind to. I performed the same evoked currents protocol, but with HNMPA in the intracellular solution. HNMPA is an insulin receptor antagonist that inhibits tyrosine kinase activity [@sapersteinetal1989]. Since insulin receptors belong to the tyrosine kinase superfamily [@demeyts2000], HNMPA would have blocked insulin from binding to insulin receptors. However, insulin also significantly decreased evoked current amplitudes within the first 5 minutes of exposure (\emph{t}(`r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(df)`) = `r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(statistic)`, \emph{p} = `r t_test_eEPSCs %>%   filter(Treatment == "HNMPA" & group2 == "t5to10") %>%   pull(p_string)`; Figure \ref{summary-plot-HNMPA}) even with HNMPA present. Since DMH neurons show the same response to insulin with HNMPA relative to control conditions, this suggested that insulin acts on DMH neurons through a different receptor.
 
 ```{r plot-HNMPA}
 #| fig.dim = c(8,5),
@@ -1945,7 +1945,7 @@ Neurons within the DMH are not identical. Depending on their location, they can 
 #| out.width = "100%"
 
 # ---------------- Plot cell locations ------------------------------------------------------------------------
-# Using rastorGrob to insert the DMH slice image as a background picture
+# Using rasterGrob to insert the DMH slice image as a background picture
 # The scale_colour_viridis_c() is only relevant if there are multiple categories
 # If you want to show multiple categories, go to geom_point() and remove 'color = my_colours[4]'
 
@@ -2012,7 +2012,7 @@ Insulin is a hormone that is closely associated with food intake, and the DMH is
 
 After 20 minutes of insulin exposure, DMH neurons fired fewer action potentials, and of the action potentials that did fire, the amplitude was lower. Action potential frequency and amplitude are indicators of intrinsic excitability [@bean2007], so these results would suggest that DMH neurons are less excitable with insulin present. However, the action potential threshold decreased after insulin exposure. Since threshold is the depolarization required to induce an action potential, a lower threshold means that a neuron can more easily become depolarized to the threshold required to fire an action potential, suggesting an increase in intrinsic excitability. These findings are unexpected, as they indicate opposing changes in intrinsic excitability after insulin exposure.
 
-One potential explanation for this effect comes from the significant increase in half-width that occurred after insulin exposure. Half-width is a measure of the repolarization rate [@bean2007], so a slower repolarization rate could indicate changes in action potential kinetics that decrease the neuron's ability to fire action potentials. This may include a decrease in the function of A-tye potassium ion channels following an action potential [@kimetal2005]. The K~v~4 potassium channel in particular has been shown to play a critical role in regulating action potential repolarization in hippocampal neurons [@kimetal2005]. However, since the after-polarization amplitude and time of the after-hyperpolarization showed no significant changes, insulin is not likely delaying potassium influx. Further research is required to determine the mechanism leading to decreased AP firing despite a lowered action potential threshold.
+One potential explanation for this effect comes from the significant increase in half-width that occurred after insulin exposure. Half-width is a measure of the repolarization rate [@bean2007], so a slower repolarization rate could indicate changes in action potential kinetics that decrease the neuron's ability to fire action potentials. This may include a decrease in the function of A-type potassium ion channels following an action potential [@kimetal2005]. The K~v~4 potassium channel in particular has been shown to play a critical role in regulating action potential repolarization in hippocampal neurons [@kimetal2005]. However, since the after-polarization amplitude and time of the after-hyperpolarization showed no significant changes, insulin is not likely delaying potassium influx. Further research is required to determine the mechanism leading to decreased AP firing despite a lowered action potential threshold.
 
 ## How does insulin affect neuronal communication?
 
@@ -2036,11 +2036,11 @@ In all treatments, DMH neurons responded similarly to insulin in males and femal
 
 ## What are the next steps?
 
-We now know that insulin decreases excitatory current amplitudes in DMH neurons, which provides opportunities for research on insulin signalling in the DMH. The goal of future studies is to learn which specific processes insulin initiates when binding to DMH neurons, and how this affects neuronal communication, and ultimately physiology. As the concentration of insulin used in this study is much higher than hypothalammic insulin levels (approximately 0.2 nM) [@baskinetal1983], future research could examine if using physiologically relevant insulin concentrations results in the same changes in neuronal activity. Future studies could also use a wider range of insulin concentrations to determine the optimal insulin concentrations required to modify synaptic transmission and neuronal excitability.
+We now know that insulin decreases excitatory current amplitudes in DMH neurons, which provides opportunities for research on insulin signalling in the DMH. The goal of future studies is to learn which specific processes insulin initiates when binding to DMH neurons, and how this affects neuronal communication, and ultimately physiology. As the concentration of insulin used in this study is much higher than hypothalamic insulin levels (approximately 0.16 nM) [@baskinetal1983], future research could examine if using physiologically relevant insulin concentrations results in the same changes in neuronal activity. Future studies could also use a wider range of insulin concentrations to determine the optimal insulin concentrations required to modify synaptic transmission and neuronal excitability.
 
-The insulin receptor blocker experiments suggested that insulin-like growth factor 1 receptors are responsible for insulin binding in the DMH. Recordings conducted in the presence of both receptor antagonists could confirm if insulin binds primarily to insulin-like growth factor 1 receptors, insulin receptors, a mixture of both receptors, or a novel receptor not directly associated with insulin. Since each of these receptors is associated with different pathways within cells [@demeyts2000], identifying the binding mechanism of insulin on DMH neurons could provide insight into the specific processes that insulin uses to influence neuronal communication. As mTOR is an important potential source of insulin-signalling in the DMH, studies with antagonists of the P13K pathway, mTOR and its downstream effectors could provide information on the specific intracellular processes that influence neuronal activity and synaptic transmission.
+The insulin receptor blocker experiments suggested that insulin-like growth factor 1 receptors are responsible for insulin binding in the DMH. Recordings conducted in the presence of both receptor antagonists could confirm if insulin binds primarily to insulin-like growth factor 1 receptors, insulin receptors, a mixture of both receptors, or a novel receptor not directly associated with insulin. Since each of these receptors is associated with different pathways within cells [@demeyts2000], identifying the binding mechanism of insulin on DMH neurons could provide insight into the specific processes that insulin uses to influence neuronal communication. As mTOR is an important potential source of insulin-signalling in the DMH, applying antagonists of the P13K pathway, mTOR and its downstream effectors could provide information on the specific intracellular processes that influence neuronal activity and synaptic transmission.
 
-There are also opportunities for whole-animal studies, such as injecting insulin into the DMH and monitoring changes in body weight and energy metabolism. This study also raises new questions about the effects of health on insulin signalling in the DMH. The rats used in this study were young and healthy. Could conditions like diabetes, which affects insulin levels in the body, affect DMH neurons? Would DMH neurons respond differently in animals with health conditions like obesity? How would insulin signalling in the DMH change in older animals?
+There are also opportunities for whole-animal studies, such as injecting insulin into the DMH and monitoring changes in body weight and energy metabolism. This study raises new questions about the effects of health on insulin signalling in the DMH. The rats used in this study were young and healthy. Could conditions like diabetes, which affects insulin levels in the body, affect DMH neurons? Would DMH neurons respond differently in animals with health conditions like obesity? How would insulin signalling in the DMH change in older animals?
 
 ## Conclusions
 
