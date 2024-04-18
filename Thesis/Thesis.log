@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  18 APR 2024 12:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  18 APR 2024 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,15 +905,14 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* bindingoffset: 22.76219pt
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 446.99283pt, 72.26999pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=446.99283pt
+* \textwidth=469.75502pt
 * \textheight=650.43001pt
-* \oddsidemargin=22.76219pt
+* \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
 * \headheight=12.0pt
@@ -1044,6 +1043,9 @@ File: ../Figures/Methods-Patch-Clamp-Technique.png Graphic file (type bmp)
 [8] [9] [10]
 File: ../Figures/AP-Schematic.png Graphic file (type bmp)
 <../Figures/AP-Schematic.png>
+
+LaTeX Warning: Float too large for page by 4.02016pt on input line 648.
+
 [11] [12]
 File: ../Figures/Evoked-Currents-Schematic.png Graphic file (type bmp)
 <../Figures/Evoked-Currents-Schematic.png>
@@ -1054,7 +1056,7 @@ File: ../Figures/Methods-Schematic-with-APs.png Graphic file (type bmp)
 File: Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf Graphic file (type pdf)
 <use Thesis_files/figure-latex/AP-data-multiplot-figure-1.pdf>
 
-LaTeX Warning: Float too large for page by 10.36507pt on input line 803.
+LaTeX Warning: Float too large for page by 22.37076pt on input line 803.
 
 [16
 
@@ -1083,7 +1085,7 @@ File: Thesis_files/figure-latex/plot-cell-coordinates-1.pdf Graphic file (type p
 
 ] [34] [35
 
-] [36] [37] [38] [39] [40] [41] [42] (./Thesis.aux)
+] [36] [37] [38] [39] [40] [41] (./Thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -1095,10 +1097,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  21152 strings out of 476717
  396264 string characters out of 5799454
- 1942148 words of memory out of 5000000
+ 1943148 words of memory out of 5000000
  42847 multiletter control sequences out of 15000+600000
  565702 words of font info for 97 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  90i,15n,124p,1085b,560s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Thesis.pdf (49 pages).
+Output written on Thesis.pdf (48 pages).

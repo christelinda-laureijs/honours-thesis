@@ -15,7 +15,7 @@ output:
 fontsize: 12pt
 geometry:
 - margin = 1in
-- bindingoffset = 8mm
+- bindingoffset = 0mm # Set to 8 mm for printing
 linestretch: 1.5
 classoption: oneside
 indent: true
