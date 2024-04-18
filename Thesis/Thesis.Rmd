@@ -17,7 +17,7 @@ geometry:
 - margin = 1in
 - bindingoffset = 8mm
 linestretch: 1.5
-classoption: twoside
+classoption: oneside
 indent: true
 editor_options:
   chunk_output_type: inline
