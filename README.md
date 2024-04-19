@@ -2,6 +2,7 @@ About the Project
 ================
 
 - [Background](#background)
+- [What do you want to do?](#what-do-you-want-to-do)
 - [Goals](#goals)
 - [Instructions](#instructions)
 - [Important variables](#important-variables)
@@ -26,6 +27,18 @@ and action potentials (a measure of excitability) before and after
 exposing neurons to 500 nM of insulin.
 
 <img src="Figures/Methods-Schematic-with-APs.png" alt="A visual summary of the experiment. I removed rat brains, stimulated DMH neurons, and recorded the resulting currents. This allowed me to compare currents before and after exposing the neurons to insulin. I also compared action potentials before and after adding insulin." width="2187" style="display: block; margin: auto;" />
+
+## What do you want to do?
+
+### I want to read the thesis!
+
+Here is a link to the [Thesis.pdf](Thesis/Thesis.pdf) file. You may find
+it easier to download and read the PDF outside of GitHub.
+
+### I want to explore the code!
+
+Scroll further to find instructions, metadata, and additional
+information.
 
 ## Goals
 

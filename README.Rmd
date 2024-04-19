@@ -27,6 +27,16 @@ I used whole-cell patch clamp electrophysiology to record from the living DMH ne
 knitr::include_graphics(here::here("Figures/Methods-Schematic-with-APs.png"))
 ```
 
+## What do you want to do?
+
+### I want to read the thesis!
+
+Here is a link to the [Thesis.pdf](Thesis/Thesis.pdf) file. You may find it easier to download and read the PDF outside of GitHub.
+
+### I want to explore the code!
+
+Scroll further to find instructions, metadata, and additional information. 
+
 ## Goals
 
 I developed this code to achieve the following goals:
