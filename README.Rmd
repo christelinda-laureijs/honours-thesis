@@ -33,11 +33,9 @@ knitr::include_graphics(here::here("Figures/Methods-Schematic-with-APs.png"))
 
 Here is a link to the [Thesis.pdf](Thesis/Thesis.pdf) file. You may find it easier to download and read the PDF outside of GitHub. The download button is on the top right of the screen.
 
-```{r download-screenshot, fig.align = 'center', fig.width = 3, fig.alt = "A screenshot of the GitHub download button showing an arrow pointing down at a rectangle. The text states 'Download raw file'", echo=F}
-knitr::include_graphics(here::here("Figures/Download-button-github.png"))
-```
-
+<div align="center">
 <img src="Figures/Download-button-github.png" width=50% height=50%>
+</div>
 
 ### I want to explore the code!
 
