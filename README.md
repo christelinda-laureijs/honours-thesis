@@ -129,8 +129,10 @@ which can also be found below in the [metadata table](#metadata).
 
 - `Output-Data-from-R` contains the processed and cleaned data as R
   object files (`.RDS`). These are required to run the plots document.
+  These are generated using the scripts within `Thesis.Rmd`.
 - `Raw-CSVs` contains the CSV files from copying and pasting from
-  Clampfit on the lab computer.
+  Clampfit on the lab computer. This will mainly contain action
+  potential parameters such as threshold and half-width.
 
 **Figures/** - Folder containing all figures. Figures generated from the
 `Thesis.Rmd` document will automatically go into folders with names
@@ -181,8 +183,9 @@ click on this to open up R, otherwise the file paths will not work.
 
 ## Metadata
 
-These are all variables included the dataframe. Values marked with a \*
-will be automatically generated during the R script.
+These are all variables included the [Raw-eEPSC-Data.csv
+file](Data/Raw-eEPSC-Data.csv). Values marked with a \* will be
+automatically generated during the R script.
 
 | Variable       | Type                | Description                                                                     |
 |:---------------|:--------------------|:--------------------------------------------------------------------------------|

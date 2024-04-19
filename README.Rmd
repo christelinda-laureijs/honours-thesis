@@ -94,8 +94,8 @@ To generate the thesis as a PDF file, go to the **Thesis/** folder, open the `Th
 
 **Data/** - Contains raw data including metadata (`eEPSC-metadata.csv`), which can also be found below in the [metadata table](#metadata).
 
--   `Output-Data-from-R` contains the processed and cleaned data as R object files (`.RDS`). These are required to run the plots document.
--   `Raw-CSVs` contains the CSV files from copying and pasting from Clampfit on the lab computer.
+-   `Output-Data-from-R` contains the processed and cleaned data as R object files (`.RDS`). These are required to run the plots document. These are generated using the scripts within `Thesis.Rmd`.
+-   `Raw-CSVs` contains the CSV files from copying and pasting from Clampfit on the lab computer. This will mainly contain action potential parameters such as threshold and half-width.
 
 **Figures/** - Folder containing all figures. Figures generated from the `Thesis.Rmd` document will automatically go into folders with names starting with **Output-**. Also contains the folders **Gap-Free-Plots/**, **Pruned Summary Plots/**, and **Representative-Traces/**.
 
@@ -130,7 +130,7 @@ knitr::purl(
 
 ## Metadata {#metadata}
 
-These are all variables included the dataframe. Values marked with a \* will be automatically generated during the R script.
+These are all variables included the [Raw-eEPSC-Data.csv file](Data/Raw-eEPSC-Data.csv). Values marked with a \* will be automatically generated during the R script.
 
 ```{r import-variable-explanations, echo=FALSE, warning=FALSE, message=FALSE}
 variable_explanations <- read.csv("Data/Variable-Explanations.csv", header = T)
