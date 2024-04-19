@@ -37,6 +37,7 @@ Here is a link to the [Thesis.pdf](Thesis/Thesis.pdf) file. You may find it easi
 knitr::include_graphics(here::here("Figures/Download-button-github.png"))
 ```
 
+<img src="Figures/Download-button-github.png" width=50% height=50%>
 
 ### I want to explore the code!
 

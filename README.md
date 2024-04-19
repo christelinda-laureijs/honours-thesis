@@ -38,6 +38,8 @@ button is on the top right of the screen.
 
 <img src="Figures/Download-button-github.png" alt="A screenshot of the GitHub download button showing an arrow pointing down at a rectangle. The text states 'Download raw file'" width="587" style="display: block; margin: auto;" />
 
+<img src="Figures/Download-button-github.png" width=50% height=50%>
+
 ### I want to explore the code!
 
 Scroll further to find instructions, metadata, and additional
