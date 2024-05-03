@@ -30,7 +30,7 @@ Import your new `eEPSC` csv file and your `Plaintext-Cell-Characteristics.csv` f
 
 ```{r import-data}
 # Import new eEPSC data copied from Clampfit
-new_PPR_data <- read.csv(here("Data/Raw-CSVs/FK.csv"))
+new_PPR_data <- read.csv(here("Data/Raw-CSVs/20240503-Raw-CSV.csv"))
 
 
 # Import CSV with info on sex, synapses, X, Y, treatment, animal, etc.
@@ -112,7 +112,11 @@ write.csv(full_PPR_data, here("Data/Raw-eEPSC-Data.csv"), row.names=F)
 
 
 # Move old datasheet to the drafts folder
-file.rename(from = here("Data/Raw-eEPSC-Data-old.csv"), to = here("Drafts","Draft-Data-Sheets",paste0(format(Sys.time(), '%Y%m%d'),"-Raw-eEPSC-Data.csv")))
+# file.rename(from = here("Data/Raw-eEPSC-Data-old.csv"), to = here("Drafts","Draft-Data-Sheets",paste0(format(Sys.time(), '%Y%m%d'),"-Raw-eEPSC-Data.csv")))
+
+# Or delete it
+file.remove(here("Data/Raw-eEPSC-Data-old.csv"))
+
 
 ```
 ```{r}
