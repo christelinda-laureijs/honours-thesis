@@ -118,16 +118,16 @@ list_of_significance_stars <- c(
 # Set colours here only for consistency
 
 line_col <- "#333333" # Sets colour of x and y-axes
-my_colours <- c("#6600cc", "#0093fb", "#55b323","#ffe70f","#e86c00","#333333", "#411900")
-my_colours_pale <- c("#b080e0","#5cb9fa", "#92d46e","#ebdf05","#f58c31","#b1b1b1")
+my_colours <- c("#6600cc", "#0093fb", "#55b323","#ffe70f","#e86c00","#333333", "#411900","#e11584")
+my_colours_pale <- c("#b080e0","#5cb9fa", "#92d46e","#ebdf05","#f58c31","#b1b1b1","#a16b4a","#f57dbe")
 
 # Rectangle highlights intervals from 5-10 min and 15-20 min
 rectangle_shading_colour <- "#f6f6f6"
 
 # Required for better contrast between the sexes in summary plots
 # Do NOT use these for any of the raw P1 vs. Time plots because they are too pale and/or too dark
-my_colours_very_dark <- c("#4d0299","#026bb5","#398511","#a69502","#994700","#000000")
-my_colours_very_pale <- c("#d6b8f5", "#8fd0ff", "#aee691","#ebdf05","#ffc38f","#dcdcdc")
+my_colours_very_dark <- c("#4d0299","#026bb5","#398511","#a69502","#994700","#000000","#785138","#910150")
+my_colours_very_pale <- c("#d6b8f5", "#8fd0ff", "#aee691","#ebdf05","#ffc38f","#dcdcdc","#bf9b84","#eba2c9")
 
 
 # Custom fonts may cause issues depending on what fonts you have in your system
@@ -833,11 +833,12 @@ summary_df <-
 # This can take a long time to run, and I don't need to run it each time I run the thesis
 # Uncomment the line below if you want to produce the raw plots
 
-# make_raw_plots(dataframe = raw_df,
-#                treatment = "Control",
-#                category = 2,
-#                color_choice = 1)
+make_raw_plots(dataframe = raw_df,
+               treatment = "AM251",
+               category = 2,
+               color_choice = 8)
 
+Individual_raw_plots_AM251_category_2
 
 # ----------------- eEPSC Analysis: View raw plots -----------------------------------------------------------------------------
 # Not for publication; just for quick viewing in R
