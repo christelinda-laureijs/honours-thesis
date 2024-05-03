@@ -833,12 +833,10 @@ summary_df <-
 # This can take a long time to run, and I don't need to run it each time I run the thesis
 # Uncomment the line below if you want to produce the raw plots
 
-make_raw_plots(dataframe = raw_df,
-               treatment = "AM251",
-               category = 2,
-               color_choice = 8)
-
-Individual_raw_plots_AM251_category_2
+# make_raw_plots(dataframe = raw_df,
+#                treatment = "AM251",
+#                category = 2,
+#                color_choice = 8)
 
 # ----------------- eEPSC Analysis: View raw plots -----------------------------------------------------------------------------
 # Not for publication; just for quick viewing in R
@@ -893,9 +891,9 @@ saveRDS(pruned_df_individual_cells, file = here("Data/Output-Data-from-R/pruned_
 # 2nd argument: The experimental category
 
 # make_individual_pruned_plots(data = pruned_df_individual_cells,
-#                              treatment = "Control",
+#                              treatment = "AM251",
 #                              category = 2,
-#                              color_choice = 1)
+#                              color_choice = 8)
 
 
 # -------------- eEPSC Analysis: View pruned plots ---------------------------------------------------------
