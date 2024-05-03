@@ -1,2 +1,3 @@
 Data/* linguist-vendored
 *.html linguist-vendored
+*.svg linguist-vendored
